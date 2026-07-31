@@ -1,7 +1,7 @@
 from urllib.request import urlopen, Request
 from wikitextparser import Template, parse
 from json import loads
-from typing import Literal, TypedDict, get_args, override
+from typing import Literal, NotRequired, TypedDict, get_args, override
 from re import IGNORECASE, findall, sub, match, escape
 from pathlib import Path
 
@@ -19,7 +19,8 @@ print(f"User-Agent: " + user_agent)
 
 class Citation(TypedDict):
     url: str
-    access_date: str
+    access_date: NotRequired[str]
+
 
 class Entry():
     citation_urls: list[Citation] = []
@@ -37,7 +38,7 @@ class Entry():
     
     @override
     def __str__(self):
-        return f"port: {self.ports} | tcp: {self.tcp} | udp: {self.udp} | sctp: {self.sctp} | dccp: {self.dccp} | description: {self.description} | citation_urls: {', '.join(self.citation_urls)}"
+        return f"port: {self.ports} | tcp: {self.tcp} | udp: {self.udp} | sctp: {self.sctp} | dccp: {self.dccp} | description: {self.description}"
 
     def add_protocol(self, value: str):
         value = value.lower()
@@ -79,49 +80,40 @@ class Entry():
                             return None
 
                     access_date = get_from_template(template, "access-date")
-                    assert access_date
 
-
+                    form = ""
                     template_names = list(filter(lambda x: x is not "", template.name.split(" ")))
                     print(template_names)
                     if len(template_names) == 2:
                         form = template_names[1]
                     elif len(template_names) > 2:
                         raise ValueError("Too many template names")
-                    else:
-                        form = ""
 
+                    
                     if form == "IETF":
                         rfc = get_from_template(template, "rfc")
+                        draft = get_from_template(template, "draft")
+
                         if rfc:
                             url = f"https://www.rfc-editor.org/info/rfc{rfc}"
-                            print(url)
+                        elif draft:
+                            url = f"https://datatracker.ietf.org/doc/html/opsawg-tacacs-10"  # TODO is is-dead attr
                         else:
-                            raise ValueError("no rfc for ietf")
-                        exit()
+                            raise ValueError("no url found for ietf")
 
-                    url = get_from_template(template, "url")
-
-                    if not url:
-                        print()
-
+                        print(url)
+                    elif form == "conference":
+                        url = "N/A (conference)"
+                    else:
+                        url = get_from_template(template, "url")
 
                     assert url is not None
 
+                    out: Citation = {"url": url}
+                    if access_date:
+                        out["access_date"] = access_date
+                    self.citation_urls.append(out)
                     
-                    self.citation_urls.append({
-                        "access_date": access_date,
-                        "url": url
-                    })
-                    
-                    
-
-                    
-                    print(template.get_arg("access-date").value)
-                    # if template.get_arg("url"):
-                    print(template.get_arg("url"))
-                    print("we did it")
-                    exit()
 
 
         print("raw " + rawValue)
