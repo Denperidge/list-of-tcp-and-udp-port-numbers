@@ -1,9 +1,8 @@
 from urllib.request import urlopen, Request
-from webbrowser import get
-from wikitextparser import parse
+from wikitextparser import Template, parse
 from json import loads
-from typing import Literal, get_args, override
-from re import IGNORECASE, sub, match, escape
+from typing import Literal, TypedDict, get_args, override
+from re import IGNORECASE, findall, sub, match, escape
 from pathlib import Path
 
 ProtocolValue = Literal["yes", "maybe|assigned", "n/a|reserved", "unofficial", "no", "any|compressible"] | None
@@ -18,8 +17,12 @@ else:
 
 print(f"User-Agent: " + user_agent)
 
+class Citation(TypedDict):
+    url: str
+    access_date: str
+
 class Entry():
-    citation_urls: list[str] = []
+    citation_urls: list[Citation] = []
 
     ports: str|None = None
 
@@ -59,6 +62,80 @@ class Entry():
                 raise IndexError("No more protocols left to set!")
 
         self.protocols_set += 1
+
+    def add_citation(self, rawValue: str):
+        assert type(rawValue) == str
+        templates = parse(rawValue).templates
+
+        if templates and len(templates) == 2:
+            for template in templates:
+                if template.name.lower().startswith("cite "):
+                    print(template)
+                    def get_from_template(template: Template, key: str) -> str|None:
+                        val = template.get_arg(key)
+                        if val and val.value:
+                            return val.value
+                        else:
+                            return None
+
+                    access_date = get_from_template(template, "access-date")
+                    assert access_date
+
+
+                    template_names = list(filter(lambda x: x is not "", template.name.split(" ")))
+                    print(template_names)
+                    if len(template_names) == 2:
+                        form = template_names[1]
+                    elif len(template_names) > 2:
+                        raise ValueError("Too many template names")
+                    else:
+                        form = ""
+
+                    if form == "IETF":
+                        rfc = get_from_template(template, "rfc")
+                        if rfc:
+                            url = f"https://www.rfc-editor.org/info/rfc{rfc}"
+                            print(url)
+                        else:
+                            raise ValueError("no rfc for ietf")
+                        exit()
+
+                    url = get_from_template(template, "url")
+
+                    if not url:
+                        print()
+
+
+                    assert url is not None
+
+                    
+                    self.citation_urls.append({
+                        "access_date": access_date,
+                        "url": url
+                    })
+                    
+                    
+
+                    
+                    print(template.get_arg("access-date").value)
+                    # if template.get_arg("url"):
+                    print(template.get_arg("url"))
+                    print("we did it")
+                    exit()
+
+
+        print("raw " + rawValue)
+
+        refs = match(r"{{cite(?P<content>([^}]|\n)+?)}}", rawValue, IGNORECASE)
+        print("Found citations:")
+        print(refs)
+        if not refs:
+            return
+        for ref in refs:
+            print(ref)
+            print(parse(ref))
+            print("MEow")
+            exit()
         
 
     def is_cited(self):
@@ -119,6 +196,8 @@ if __name__ == "__main__":
                     i += 1
                     continue
 
+                entry.add_citation(cell)
+
 
                 protocol = match(REGEX_PROTOCOL, cell, IGNORECASE)
                 # cell = parse(cell)
@@ -154,6 +233,7 @@ if __name__ == "__main__":
             assert i == len(cells) - 1 and cells[i]  # Description should be last
 
             entry.description = cells[i]
+            entry.add_citation(entry.description)
 
             print(entry)
 
