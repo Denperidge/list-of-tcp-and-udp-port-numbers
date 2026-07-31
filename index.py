@@ -2,11 +2,11 @@ from urllib.request import urlopen, Request
 from webbrowser import get
 from wikitextparser import parse
 from json import loads
-from typing import Literal, get_args
-from re import sub, match, escape
+from typing import Literal, get_args, override
+from re import IGNORECASE, sub, match, escape
 from pathlib import Path
 
-ProtocolValue = Literal["yes", "Maybe|Assigned", "N/A|Reserved", "unofficial", "no"] | None
+ProtocolValue = Literal["yes", "maybe|assigned", "n/a|reserved", "unofficial", "no", "any|compressible"] | None
 protocol_values: list[str] = list(get_args(get_args(ProtocolValue)[0]))
 
 user_agent_path = Path(".user-agent")
@@ -14,11 +14,9 @@ if not user_agent_path.exists():
     user_agent = input("Insert User-Agent according to https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy: ")
     _ = user_agent_path.write_text(user_agent, "utf-8")
 else:
-    user_agent = user_agent_path.read_text(encoding="utf-5") 
-    
+    user_agent = user_agent_path.read_text(encoding="utf-8") 
 
-with open(".user-agent", "r", encoding="utf-8"):
-    pass
+print(f"User-Agent: " + user_agent)
 
 class Entry():
     citation_urls: list[str] = []
@@ -30,20 +28,18 @@ class Entry():
     sctp: ProtocolValue = None
     dccp: ProtocolValue = None
 
-    protocols_set = 0
+    protocols_set: int = 0
 
-    def __init__(self):
-        self.description: str = ""
-
+    description: str|None = None
+    
+    @override
     def __str__(self):
-        return f"port: {self.ports} | tcp: {self.tcp} | udp: {self.udp} | sctp: {self.sctp} | dccp: {self.dccp} | citation_urls: {', '.join(self.citation_urls)}"
-
-    def set_protocol(self, keyIndex: int, value: str):
-        pass
+        return f"port: {self.ports} | tcp: {self.tcp} | udp: {self.udp} | sctp: {self.sctp} | dccp: {self.dccp} | description: {self.description} | citation_urls: {', '.join(self.citation_urls)}"
 
     def add_protocol(self, value: str):
+        value = value.lower()
         if value not in protocol_values:
-            raise ValueError(f"${value} is not in ${protocol_values}")
+            raise ValueError(f"{value} is not in {protocol_values}")
         
         protocols_set = self.protocols_set
         match protocols_set:
@@ -62,10 +58,7 @@ class Entry():
             case _:
                 raise IndexError("No more protocols left to set!")
 
-
-                print(protocol)
         self.protocols_set += 1
-        
         
 
     def is_cited(self):
@@ -73,7 +66,7 @@ class Entry():
 
 
 REGEX_PORTS = r"(?P<ports>[0-9-]+)"
-REGEX_PROTOCOL = r"(\W*?colspan=(?P<colspan>[1-4])\W*){{(?P<value>(" + "|".join([escape(value) for value in protocol_values]) + r"))}}"
+REGEX_PROTOCOL = r"(|\W*?colspan=(\"|)(?P<colspan>[1-4])(\"|)\W*?){{(?P<value>(" + "|".join([escape(value.lower()) for value in protocol_values]) + r"))}}"
 print(REGEX_PROTOCOL)
 
 if __name__ == "__main__":
@@ -105,19 +98,40 @@ if __name__ == "__main__":
 
         # print(table)
         for cells in rows:
-            print(f"Parsing {cells}")
+            cells = list(filter(lambda cell: cell != None, cells))
+            # print(f"Parsing {cells}")
 
             entry = Entry()
 
             entry.ports = cells[0]
             del cells[0]
 
+            print(f"Handling data for ports: {entry.ports}")
+            print(cells)
+
+
             i = 0
             while i != len(cells):
                 cell = cells[i]
                 assert type(cell) == str  # Make sure not none
 
-                protocol = match(REGEX_PROTOCOL, cell)
+                if cell == "":  # Empty protocol aka none
+                    i += 1
+                    continue
+
+
+                protocol = match(REGEX_PROTOCOL, cell, IGNORECASE)
+                # cell = parse(cell)
+                #
+                # print(cell.attrs)
+                #
+                # templates = cell.templates
+                # protocol = templates[0].name.lower()
+                # assert protocol in protocol_values
+                # if len(templates) > 1:
+                #     for j in range(1, len(templates)):
+                #         print(templates[j].arguments[0])
+
 
                 if protocol == None:
                     print("No protocol found, continuing")
@@ -134,23 +148,14 @@ if __name__ == "__main__":
                     entry.add_protocol(protocol_value)
 
                 i+=1
+            # At least one needs a value
+            assert bool(entry.tcp or entry.udp or entry.sctp or entry.dccp)
+
+            assert i == len(cells) - 1 and cells[i]  # Description should be last
+
+            entry.description = cells[i]
 
             print(entry)
-
-
-            # Double wrap get_args, as the type is Literal|None
-            print("Yes" in get_args(get_args(ProtocolValue)[0]))
-            exit()
-            entry.ports = cells[0]
-            if cells[0] != "9":
-                continue
-
-            print(cells[1])
-
-            
-            
-        print("---")
-
 
 
         # exit()
