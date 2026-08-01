@@ -1,6 +1,7 @@
+from dataclasses import dataclass
 from urllib.request import urlopen, Request
 from wikitextparser import Template, parse
-from json import loads
+from json import JSONEncoder, loads, dumps
 from typing import Any, Literal, NotRequired, TypedDict, get_args, override
 from re import IGNORECASE, sub, match, escape
 from pathlib import Path
@@ -54,7 +55,7 @@ class Entry():
 
     @override
     def __str__(self):
-        return f"port: {self.ports} | tcp: {self.tcp} | udp: {self.udp} | sctp: {self.sctp} | dccp: {self.dccp} | description: {self.description}"
+        return f"port: {self.ports} | tcp: {self.tcp} | udp: {self.udp} | sctp: {self.sctp} | dccp: {self.dccp} | description: {self.description} | citation_urls: {','.join(list(map(lambda cite: cite["url"], self.citation_urls)))}"
 
     """
     The protocol values are passed in the table by either a template or an empty cell
@@ -70,9 +71,8 @@ class Entry():
         - If none, set to tcp
         - If one, set to udp
         - ...
-    - If passed a correct ProtocolValue, set it to whichever
-    - If passed ""
-    the first time you a value
+    - If passed a correct ProtocolValue, set it to the next protocol
+    - If passed "", skip protocol
     """
     def add_protocol(self, value: str):
         if value == "":  # Leave protocol at None & skip
@@ -140,13 +140,29 @@ class Entry():
                     # No matter what format, url must be defined and a string
                     assert type(url) == str  
 
-                    out: Citation = {"url": url}
+                    citation: Citation = {"url": url}
                     if access_date:
-                        out["access_date"] = access_date
-                    self.citation_urls.append(out)
+                        citation["access_date"] = access_date
+                    self.citation_urls.append(citation)
 
     def is_cited(self):
         return bool(len(self.citation_urls) >= 1)
+
+class EntryEncoder(JSONEncoder):
+    @override
+    def default(self, o):
+
+        if isinstance(o, Entry):
+            return {
+                "ports": o.ports,
+                "description": o.description,
+                "tcp": o.tcp,
+                "udp": o.udp,
+                "sctp": o.sctp,
+                "dccp": o.dccp,
+                "citation_urls": o.citation_urls,
+            }
+        return super().default(o)
 
 if __name__ == "__main__":
     # Step 1: determine user agent, as by wikipedia policy
@@ -219,7 +235,7 @@ if __name__ == "__main__":
                 # Colspan wasn't fetchable using wikitextparser: use regex
                 protocol = match(REGEX_PROTOCOL, col, IGNORECASE)
                 if protocol == None:
-                    print("No protocol found, continuing")
+                    debug("No protocol found, continuing")
                     break
 
                 colspan = protocol.group("colspan")
@@ -242,8 +258,12 @@ if __name__ == "__main__":
             entry.description = cols[i]
             entry.add_citation(entry.description)
 
-            out.append(entry)
             debug(entry)
+
+            out.append(entry)
+
+    _ = Path("list.json").write_text(dumps(out, cls=EntryEncoder, indent=2), encoding="utf-8")
+
    
 
 
