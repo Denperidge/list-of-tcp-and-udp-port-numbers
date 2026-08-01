@@ -5,6 +5,9 @@ from typing import Any, Literal, NotRequired, TypedDict, get_args, override
 from re import IGNORECASE, sub, match, escape
 from pathlib import Path
 
+# TODO is is-dead attr
+# TODO: make sure cite verification needed is treated as None
+
 """ LOG FUNCS """
 def info(message: Any):
     print(f"[INFO] {message}")
@@ -15,13 +18,25 @@ def debug(message: Any):
 def error(message: Any):
     print(f">> ERROR: {message} <<")
 
+
+""" Classes, types & consts """
 ProtocolValue = Literal["yes", "maybe|assigned", "n/a|reserved", "unofficial", "no", "any|compressible"] | None
-protocol_values: list[str] = list(get_args(get_args(ProtocolValue)[0]))
+PROTOCOL_VALUES: list[str] = list(get_args(get_args(ProtocolValue)[0]))
+
+REGEX_PORTS = r"(?P<ports>[0-9-]+)"
+REGEX_PROTOCOL = r"(|\W*?colspan=(\"|)(?P<colspan>[1-4])(\"|)\W*?){{(?P<value>(" + "|".join([escape(value.lower()) for value in PROTOCOL_VALUES]) + r"))}}"
 
 class Citation(TypedDict):
     url: str
     access_date: NotRequired[str]
 
+# Return arg of key from wikitext template. See Entry.add_citation
+def get_from_template(template: Template, key: str) -> str|None:
+    val = template.get_arg(key)
+    if val and val.value:
+        return val.value
+    else:
+        return None
 
 class Entry():
     citation_urls: list[Citation] = []
@@ -33,10 +48,10 @@ class Entry():
     sctp: ProtocolValue = None
     dccp: ProtocolValue = None
 
-    protocols_set: int = 0
-
     description: str|None = None
-    
+
+    protocols_set: int = 0  # See add_protocol
+
     @override
     def __str__(self):
         return f"port: {self.ports} | tcp: {self.tcp} | udp: {self.udp} | sctp: {self.sctp} | dccp: {self.dccp} | description: {self.description}"
@@ -44,23 +59,32 @@ class Entry():
     """
     The protocol values are passed in the table by either a template or an empty cell
     these cells, however, can have a colspan.
+    The empty cells together with the colspan always add up to 4 in total
+
     The code in __main__ handles:
+    - Passing protocol value columns content to add_protocol
     - Adding the port multiple times depending on colspan
     
-    This function is rather "dumb" in that regard:
+    This function is rather "dumb" in some regards:
+    - Keep track of how many protocols have been assigned
+        - If none, set to tcp
+        - If one, set to udp
+        - ...
+    - If passed a correct ProtocolValue, set it to whichever
+    - If passed ""
     the first time you a value
     """
     def add_protocol(self, value: str):
-        if value == "":
+        if value == "":  # Leave protocol at None & skip
             self.protocols_set += 1
             return
 
-        value = value.lower()
-        if value not in protocol_values:
-            raise ValueError(f"{value} is not in {protocol_values}")
+        value = value.lower()  # Wiki templates are not consistently cased
+        if value not in PROTOCOL_VALUES:  # But it must be a valid ProtocolValue
+            raise ValueError(f"{value} is not in {PROTOCOL_VALUES}")
         
         protocols_set = self.protocols_set
-        match protocols_set:
+        match protocols_set:  # Set value to next protocol
             case 0:
                 debug(f"Setting tcp to {value}")
                 self.tcp = value
@@ -76,80 +100,53 @@ class Entry():
             case _:
                 raise IndexError("No more protocols left to set!")
 
-        self.protocols_set += 1
+        self.protocols_set += 1  # Move index to the next protocol
 
-    def add_citation(self, rawValue: str):
-        assert type(rawValue) == str
-        templates = parse(rawValue).templates
+    def add_citation(self, colValue: str):
+        assert type(colValue) == str  # Type safety
+        templates = parse(colValue).templates  # Parse wikitext, get templates
 
         if templates and len(templates) == 2:
             for template in templates:
+                # Only consider cite templates. Remember that templates aren't case sensitive, but python is
                 if template.name.lower().startswith("cite "):
-                    print(template)
-                    def get_from_template(template: Template, key: str) -> str|None:
-                        val = template.get_arg(key)
-                        if val and val.value:
-                            return val.value
-                        else:
-                            return None
-
+                    # Get access date if its there
                     access_date = get_from_template(template, "access-date")
 
-                    form = ""
+                    form = ""  # Format for the url, if a specific cite is used
+                    # Get template names of this template usage
                     template_names = list(filter(lambda x: x is not "", template.name.split(" ")))
-                    print(template_names)
-                    if len(template_names) == 2:
-                        form = template_names[1]
+                    if len(template_names) == 2:  # For example: {{cite ietf}}
+                        form = template_names[1]  # For example: ietf
                     elif len(template_names) > 2:
                         raise ValueError("Too many template names")
-
                     
-                    if form == "IETF":
+                    if form == "IETF":  # Has two versions: rfc & draft
                         rfc = get_from_template(template, "rfc")
                         draft = get_from_template(template, "draft")
 
                         if rfc:
                             url = f"https://www.rfc-editor.org/info/rfc{rfc}"
                         elif draft:
-                            url = f"https://datatracker.ietf.org/doc/html/opsawg-tacacs-10"  # TODO is is-dead attr
+                            url = f"https://datatracker.ietf.org/doc/html/opsawg-tacacs-10"
                         else:
                             raise ValueError("no url found for ietf")
 
-                        print(url)
                     elif form == "conference":
                         url = "N/A (conference)"
                     else:
                         url = get_from_template(template, "url")
 
-                    assert url is not None
+                    # No matter what format, url must be defined and a string
+                    assert type(url) == str  
 
                     out: Citation = {"url": url}
                     if access_date:
                         out["access_date"] = access_date
                     self.citation_urls.append(out)
-                    
-
-
-        print("raw " + rawValue)
-
-        refs = match(r"{{cite(?P<content>([^}]|\n)+?)}}", rawValue, IGNORECASE)
-        print("Found citations:")
-        print(refs)
-        if not refs:
-            return
-        for ref in refs:
-            print(ref)
-            print(parse(ref))
-            print("MEow")
-            exit()
-        
 
     def is_cited(self):
         return bool(len(self.citation_urls) >= 1)
-
-
-REGEX_PORTS = r"(?P<ports>[0-9-]+)"
-REGEX_PROTOCOL = r"(|\W*?colspan=(\"|)(?P<colspan>[1-4])(\"|)\W*?){{(?P<value>(" + "|".join([escape(value.lower()) for value in protocol_values]) + r"))}}"
 
 if __name__ == "__main__":
     # Step 1: determine user agent, as by wikipedia policy
@@ -177,9 +174,8 @@ if __name__ == "__main__":
     except Exception as e:
         raise e
 
-    # TODO: make sure cite verification needed is treated as None
 
-    # Step 2: Parse the tables in the article
+    # Step 3: Parse the tables in the article
     parsed = parse(source)
     out: list[Entry] = []
 
@@ -196,59 +192,58 @@ if __name__ == "__main__":
         rows = table.data()  # list[list[str]]: [[cell, cell, cell], [cell, cell, cell, cell]]
         del rows[0]  # Header row
 
-        for cells in rows:
+        for cols in rows:
             # Filter out non-existant cells, usually at the end
-            cells = list(filter(lambda cell: cell != None, cells))
+            cols = list(filter(lambda cell: cell != None, cols))
 
             entry = Entry()
 
-            entry.ports = cells[0]
-            del cells[0]  # Remove ports from cells to allow cleaner iteration
+            entry.ports = cols[0]
+            del cols[0]  # Remove ports from cells to allow cleaner iteration
 
-            print(f"Handling data for ports: {entry.ports}")
-            print(cells)
-
+            info(f"Handling data for ports: {entry.ports}")
 
             i = 0
-            while i != len(cells):
-                cell = cells[i]
-                assert type(cell) == str  # Make sure not none
+            while i != len(cols):
+                col = cols[i]
+                assert type(col) == str  # Make sure not none
 
                 # If an empty cell, notify the class that a None value is due and go to next cell
-                if cell == "":
+                if col == "":
                     entry.add_protocol("")
                     i += 1
                     continue
 
-                entry.add_citation(cell)  # Get any refs from protocol field
+                entry.add_citation(col)  # Get any refs from protocol field
 
-                protocol = match(REGEX_PROTOCOL, cell, IGNORECASE)
-                                
+                # Colspan wasn't fetchable using wikitextparser: use regex
+                protocol = match(REGEX_PROTOCOL, col, IGNORECASE)
                 if protocol == None:
                     print("No protocol found, continuing")
                     break
-                
+
                 colspan = protocol.group("colspan")
                 if not colspan:
                     add = [ 1 ]
                 else:
                     add = range(0, int(colspan))
 
-                for j in add:
+                for j in add:  # Add port for ever column spanned
                     protocol_value = protocol.group("value")
                     entry.add_protocol(protocol_value)
 
                 i+=1
+
             # At least one needs a value
             assert bool(entry.tcp or entry.udp or entry.sctp or entry.dccp)
 
-            assert i == len(cells) - 1 and cells[i]  # Description should be last
-
-            entry.description = cells[i]
+            # By now, we need to have hit description. It should be the last column
+            assert i == len(cols) - 1 and cols[i]  
+            entry.description = cols[i]
             entry.add_citation(entry.description)
 
             out.append(entry)
-            print(entry)
+            debug(entry)
    
 
 
