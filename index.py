@@ -40,7 +40,7 @@ def get_from_template(template: Template, key: str) -> str|None:
         return None
 
 class Entry():
-    citation_urls: list[Citation] = []
+    citation_urls: list[Citation]
 
     ports: str|None = None
 
@@ -52,6 +52,9 @@ class Entry():
     description: str|None = None
 
     protocols_set: int = 0  # See add_protocol
+
+    def __init__(self):
+        self.citation_urls = []
 
     @override
     def __str__(self):
@@ -186,7 +189,7 @@ if __name__ == "__main__":
         with urlopen(req) as resp:
             source: str = loads(resp.read().decode("utf-8")).get("source")
             
-            source = sub(r"<!--.*?-->", "", source)
+            source = sub(r"<!--.*?-->", "", source).replace("\u2013", "-")
     except Exception as e:
         raise e
 
