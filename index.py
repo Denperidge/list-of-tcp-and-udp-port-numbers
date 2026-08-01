@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from multiprocessing import Value
 from urllib.request import urlopen, Request
 from wikitextparser import Template, parse
 from json import JSONEncoder, loads, dumps
@@ -23,10 +24,12 @@ def error(message: Any):
 """ Classes, types & consts """
 ProtocolValue = Literal["yes", "maybe|assigned", "n/a|reserved", "unofficial", "no", "any|compressible"] | None
 PROTOCOL_VALUES: list[str] = list(get_args(get_args(ProtocolValue)[0]))
+ALL_PROTOCOLS = Literal["tcp", "udp", "sctp", "dccp"]
 
 REGEX_PORTS = r"(?P<ports>[0-9-]+)"
 REGEX_INLINE_REF = r"(?<=<ref )[^/>]*?(?=/>)"
 REGEX_PROTOCOL = r"(|\W*?colspan=(\"|)(?P<colspan>[1-4])(\"|)\W*?){{(?P<value>(" + "|".join([escape(value.lower()) for value in PROTOCOL_VALUES]) + r"))}}"
+REGEX_FIND_ENTRIES = r"[^\w]"  # Only keep alphanumeric for stabler search. hopefully
 
 class Citation(TypedDict):
     url: str
@@ -60,6 +63,19 @@ class Entry():
     @override
     def __str__(self):
         return f"port: {self.ports} | tcp: {self.tcp} | udp: {self.udp} | sctp: {self.sctp} | dccp: {self.dccp} | description: {self.description} | citation_urls: {','.join(list(map(lambda cite: cite["url"], self.citation_urls)))}"
+
+    def get_protocol(self, key: ALL_PROTOCOLS):
+        # TODO: cleaner
+        match key:
+            case "tcp":
+                return self.tcp
+            case "udp":
+                return self.udp
+            case "sctp":
+                return self.sctp
+            case "dccp":
+                return self.dccp
+
 
     """
     The protocol values are passed in the table by either a template or an empty cell
@@ -176,7 +192,55 @@ class EntryEncoder(JSONEncoder):
             }
         return super().default(o)
 
+def loweralphanumeric(string: str):
+    return sub(REGEX_FIND_ENTRIES, "", string).lower()
+
+def find_entries(entries: list[Entry], key: str):
+    out: list[Entry] = []
+    key = loweralphanumeric(key)
+    for entry in entries:
+        if key in loweralphanumeric(entry.description):
+            out.append(entry)
+    return out
+
+""" Testing """
+class SanityTest(TypedDict):
+    search_key: str
+    ports: str
+    tcp: NotRequired[ProtocolValue]
+    udp: NotRequired[ProtocolValue]
+    sctp: NotRequired[ProtocolValue]
+    dccp: NotRequired[ProtocolValue]
+    index: NotRequired[int]
+
+def assert_and_log(key: str, output_value: Any, expected_value: Any):
+    debug(f"Entry {key} {output_value} == expected {expected_value}?")
+    assert output_value == expected_value
+    debug("Success!")
+ 
+
+
 if __name__ == "__main__":
+    tests: list[SanityTest] = [
+        {
+            "search_key": "id softwares quakeworld",
+            "index": 0,
+            "ports": "27000-27006",
+            "udp": "unofficial"
+        },
+        {
+            "search_key": "QuakEwoRld",
+            "index": 1,
+            "ports": "27500-27900",
+            "udp": "unofficial"
+        },
+        {
+            "search_key": "Factorio",
+            "ports": "34197",
+            "tcp": "no",
+            "udp": "unofficial"
+        }
+    ]
     # Step 1: determine user agent, as by wikipedia policy
     user_agent_path = Path(".user-agent")
     if not user_agent_path.exists():
@@ -276,9 +340,28 @@ if __name__ == "__main__":
 
             debug(entry)
 
-            out.append(entry)
+            out.append(entry)  
 
+    for test in tests:
+        debug(f"Test: {test}")
+
+        found_entry = find_entries(out, test["search_key"])[test.get("index", 0)]
+
+        assert_and_log(
+            "ports",
+            output_value=found_entry.ports,
+            expected_value=test["ports"])
+
+        for protocol in get_args(ALL_PROTOCOLS):
+            assert_and_log(
+                "protocol",
+                output_value=found_entry.get_protocol(protocol),
+                expected_value= test.get(protocol, None)  # None is default value, aka unset
+            )
+           
     _ = Path("list.json").write_text(dumps(out, cls=EntryEncoder, indent=2), encoding="utf-8")
+
+
 
    
 
