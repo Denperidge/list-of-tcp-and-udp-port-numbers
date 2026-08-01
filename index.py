@@ -1,21 +1,22 @@
 from urllib.request import urlopen, Request
 from wikitextparser import Template, parse
 from json import loads
-from typing import Literal, NotRequired, TypedDict, get_args, override
-from re import IGNORECASE, findall, sub, match, escape
+from typing import Any, Literal, NotRequired, TypedDict, get_args, override
+from re import IGNORECASE, sub, match, escape
 from pathlib import Path
+
+""" LOG FUNCS """
+def info(message: Any):
+    print(f"[INFO] {message}")
+
+def debug(message: Any):
+    print(f"\t[DEBUG] {message}")
+
+def error(message: Any):
+    print(f">> ERROR: {message} <<")
 
 ProtocolValue = Literal["yes", "maybe|assigned", "n/a|reserved", "unofficial", "no", "any|compressible"] | None
 protocol_values: list[str] = list(get_args(get_args(ProtocolValue)[0]))
-
-user_agent_path = Path(".user-agent")
-if not user_agent_path.exists():
-    user_agent = input("Insert User-Agent according to https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy: ")
-    _ = user_agent_path.write_text(user_agent, "utf-8")
-else:
-    user_agent = user_agent_path.read_text(encoding="utf-8") 
-
-print(f"User-Agent: " + user_agent)
 
 class Citation(TypedDict):
     url: str
@@ -40,7 +41,20 @@ class Entry():
     def __str__(self):
         return f"port: {self.ports} | tcp: {self.tcp} | udp: {self.udp} | sctp: {self.sctp} | dccp: {self.dccp} | description: {self.description}"
 
+    """
+    The protocol values are passed in the table by either a template or an empty cell
+    these cells, however, can have a colspan.
+    The code in __main__ handles:
+    - Adding the port multiple times depending on colspan
+    
+    This function is rather "dumb" in that regard:
+    the first time you a value
+    """
     def add_protocol(self, value: str):
+        if value == "":
+            self.protocols_set += 1
+            return
+
         value = value.lower()
         if value not in protocol_values:
             raise ValueError(f"{value} is not in {protocol_values}")
@@ -48,16 +62,16 @@ class Entry():
         protocols_set = self.protocols_set
         match protocols_set:
             case 0:
-                print(f"Setting tcp to {value}")
+                debug(f"Setting tcp to {value}")
                 self.tcp = value
             case 1:
-                print(f"Setting udp to {value}")
+                debug(f"Setting udp to {value}")
                 self.udp = value
             case 2:
-                print(f"Setting sctp to {value}")
+                debug(f"Setting sctp to {value}")
                 self.sctp = value
             case 3:
-                print(f"Setting dccp to {value}")
+                debug(f"Setting dccp to {value}")
                 self.dccp = value
             case _:
                 raise IndexError("No more protocols left to set!")
@@ -136,10 +150,23 @@ class Entry():
 
 REGEX_PORTS = r"(?P<ports>[0-9-]+)"
 REGEX_PROTOCOL = r"(|\W*?colspan=(\"|)(?P<colspan>[1-4])(\"|)\W*?){{(?P<value>(" + "|".join([escape(value.lower()) for value in protocol_values]) + r"))}}"
-print(REGEX_PROTOCOL)
 
 if __name__ == "__main__":
-    # Step 1: Read from
+    # Step 1: determine user agent, as by wikipedia policy
+    user_agent_path = Path(".user-agent")
+    if not user_agent_path.exists():
+        user_agent = input("Insert User-Agent according to 'https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy':")
+        _ = user_agent_path.write_text(user_agent, "utf-8")
+    else:
+        user_agent = user_agent_path.read_text(encoding="utf-8") 
+
+    print("[INFO] Using User-Agent: " + user_agent)
+
+
+    print("[INFO] Using following protocol regex: " + REGEX_PROTOCOL)
+
+
+    # Step 2: Get latest page version from Wikipedia & cleanup for better parsing
     try:
         req = Request("https://en.wikipedia.org/w/rest.php/v1/page/List_of_TCP_and_UDP_port_numbers")
         req.add_header("User-Agent", user_agent)
@@ -150,7 +177,11 @@ if __name__ == "__main__":
     except Exception as e:
         raise e
 
+    # TODO: make sure cite verification needed is treated as None
+
+    # Step 2: Parse the tables in the article
     parsed = parse(source)
+    out: list[Entry] = []
 
     port_sections = [
         parsed.sections[2],  # well_known_ports 
@@ -158,22 +189,21 @@ if __name__ == "__main__":
         parsed.sections[4]   # dynamic_private_ephemeral_ports
     ]
     for section in port_sections:
-        assert len(section.tables) == 1
-
+        # Sanity check: 1 table expected per section
+        assert len(section.tables) == 1  
         table = section.tables[0]
 
-        rows = table.data()  # [[cell, cell, cell], [cell, cell, cell, cell]]
-        del rows[0]  # Header
+        rows = table.data()  # list[list[str]]: [[cell, cell, cell], [cell, cell, cell, cell]]
+        del rows[0]  # Header row
 
-        # print(table)
         for cells in rows:
+            # Filter out non-existant cells, usually at the end
             cells = list(filter(lambda cell: cell != None, cells))
-            # print(f"Parsing {cells}")
 
             entry = Entry()
 
             entry.ports = cells[0]
-            del cells[0]
+            del cells[0]  # Remove ports from cells to allow cleaner iteration
 
             print(f"Handling data for ports: {entry.ports}")
             print(cells)
@@ -184,26 +214,16 @@ if __name__ == "__main__":
                 cell = cells[i]
                 assert type(cell) == str  # Make sure not none
 
-                if cell == "":  # Empty protocol aka none
+                # If an empty cell, notify the class that a None value is due and go to next cell
+                if cell == "":
+                    entry.add_protocol("")
                     i += 1
                     continue
 
-                entry.add_citation(cell)
-
+                entry.add_citation(cell)  # Get any refs from protocol field
 
                 protocol = match(REGEX_PROTOCOL, cell, IGNORECASE)
-                # cell = parse(cell)
-                #
-                # print(cell.attrs)
-                #
-                # templates = cell.templates
-                # protocol = templates[0].name.lower()
-                # assert protocol in protocol_values
-                # if len(templates) > 1:
-                #     for j in range(1, len(templates)):
-                #         print(templates[j].arguments[0])
-
-
+                                
                 if protocol == None:
                     print("No protocol found, continuing")
                     break
@@ -227,59 +247,10 @@ if __name__ == "__main__":
             entry.description = cells[i]
             entry.add_citation(entry.description)
 
+            out.append(entry)
             print(entry)
+   
 
-
-        # exit()
-        continue
 
         
 
-        cells = str(section.get_tables(True)[0]).split("|-")
-        #for i in range(0, len(rows), 3):
-        del cells[0]  # Skip table title
-        del cells[0]  # Skip header cells
-        for cells in cells:
-            # row = rows[i]
-            
-            cols = cells.split("||")
-            from re import sub, MULTILINE
-            cols = list(map(lambda col: sub("|", col, "m").strip(), cols))
-            print(f"Parsing cols {cols}")
-            from re import match
-
-            # Expect empty
-            for index in [2, 0]:
-                print(f"'{len(cols[index])}'")
-                assert len(cols[index]) == 0
-                del cols[index]
-
-
-            print("Parsing port from " + cols[0])
-            ports = match(REGEX_PORTS, cols[0])
-            assert ports  # Make sure its not none
-
-            ports = ports.group("ports")
-            print(ports)
-            #
-            
-            for col in cols:
-                col = col.strip()
-                
-                print(col)
-
-        # print(table)
-        # exit()
-    
-
-
-
-
-    exit()
-
-    for section in parsed.tables:
-
-        cells = section.data()
-
-        for cells in cells:
-            print(cells)
