@@ -3,7 +3,7 @@ from urllib.request import urlopen, Request
 from wikitextparser import Template, parse
 from json import JSONEncoder, loads, dumps
 from typing import Any, Literal, NotRequired, TypedDict, get_args, override
-from re import IGNORECASE, sub, match, escape
+from re import IGNORECASE, findall, sub, match, escape
 from pathlib import Path
 
 # TODO is is-dead attr
@@ -25,6 +25,7 @@ ProtocolValue = Literal["yes", "maybe|assigned", "n/a|reserved", "unofficial", "
 PROTOCOL_VALUES: list[str] = list(get_args(get_args(ProtocolValue)[0]))
 
 REGEX_PORTS = r"(?P<ports>[0-9-]+)"
+REGEX_INLINE_REF = r"(?<=<ref )[^/>]*?(?=/>)"
 REGEX_PROTOCOL = r"(|\W*?colspan=(\"|)(?P<colspan>[1-4])(\"|)\W*?){{(?P<value>(" + "|".join([escape(value.lower()) for value in PROTOCOL_VALUES]) + r"))}}"
 
 class Citation(TypedDict):
@@ -109,6 +110,14 @@ class Entry():
         assert type(colValue) == str  # Type safety
         templates = parse(colValue).templates  # Parse wikitext, get templates
 
+        # From self-closing <ref/> (e.g. no content)
+        inline_ref = findall(REGEX_INLINE_REF, colValue)
+        for ref in inline_ref:
+            self.citation_urls.append({
+                "url": f"Inline reference: {ref}"
+            })
+
+        # From {{ Cite }}
         if templates and len(templates) == 2:
             for template in templates:
                 # Only consider cite templates. Remember that templates aren't case sensitive, but python is

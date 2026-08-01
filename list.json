@@ -15,7 +15,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      }
+    ]
   },
   {
     "ports": "2",
@@ -24,7 +28,11 @@
     "udp": "n/a|reserved",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      }
+    ]
   },
   {
     "ports": "3",
@@ -33,7 +41,11 @@
     "udp": "n/a|reserved",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      }
+    ]
   },
   {
     "ports": "5",
@@ -127,7 +139,14 @@
     "udp": "no",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      },
+      {
+        "url": "Inline reference: name=\"systat-netstat\" "
+      }
+    ]
   },
   {
     "ports": "17",
@@ -172,7 +191,14 @@
     "udp": "maybe|assigned",
     "sctp": "yes",
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc4960\" "
+      },
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\" "
+      }
+    ]
   },
   {
     "ports": "21",
@@ -182,6 +208,15 @@
     "sctp": "yes",
     "dccp": null,
     "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc4960\""
+      },
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      },
+      {
+        "url": "Inline reference: name=\"rfc4960\""
+      },
       {
         "url": "https://www.rfc-editor.org/info/rfc765 ",
         "access_date": "2016-09-27"
@@ -199,7 +234,14 @@
     "udp": "maybe|assigned",
     "sctp": "yes",
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc4960\""
+      },
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "23",
@@ -208,7 +250,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "24",
@@ -235,7 +281,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "27",
@@ -244,7 +294,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "28",
@@ -262,7 +316,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "31",
@@ -271,7 +329,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "33",
@@ -280,7 +342,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "37",
@@ -298,7 +364,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "39",
@@ -307,7 +377,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "41",
@@ -316,7 +390,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "42",
@@ -343,7 +421,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "45",
@@ -352,7 +434,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "46",
@@ -361,7 +447,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "47",
@@ -379,7 +469,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "49",
@@ -406,7 +500,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "51",
@@ -433,7 +531,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "54",
@@ -442,7 +544,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"xns\""
+      }
+    ]
   },
   {
     "ports": "55",
@@ -451,7 +557,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "56",
@@ -460,7 +570,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"xns\""
+      }
+    ]
   },
   {
     "ports": "58",
@@ -469,7 +583,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"xns\""
+      }
+    ]
   },
   {
     "ports": "61",
@@ -479,6 +597,9 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\""
+      },
       {
         "url": "https://www.rfc-editor.org/info/rfc1060 ",
         "access_date": "2018-07-24"
@@ -496,7 +617,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "63",
@@ -505,7 +630,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "64",
@@ -514,7 +643,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "65",
@@ -523,7 +656,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "66",
@@ -532,7 +669,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "67",
@@ -541,7 +682,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "68",
@@ -550,7 +695,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "69",
@@ -559,7 +708,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "70",
@@ -586,7 +739,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "78",
@@ -595,7 +752,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "79",
@@ -605,6 +766,9 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      },
       {
         "url": "https://www.rfc-editor.org/info/rfc742 ",
         "access_date": "2016-10-16"
@@ -622,7 +786,11 @@
     "udp": "yes",
     "sctp": "yes",
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc4960\""
+      }
+    ]
   },
   {
     "ports": "81",
@@ -640,7 +808,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "82",
@@ -658,7 +830,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "84",
@@ -667,7 +843,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "85",
@@ -676,7 +856,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "86",
@@ -685,7 +869,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "88",
@@ -695,6 +883,9 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\" "
+      },
       {
         "url": "https://www.rfc-editor.org/info/rfc1510 ",
         "access_date": "2016-10-16 "
@@ -712,7 +903,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "90",
@@ -721,7 +916,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "90",
@@ -730,7 +929,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      }
+    ]
   },
   {
     "ports": "91",
@@ -739,7 +942,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "92",
@@ -748,7 +955,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "93",
@@ -757,7 +968,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "94",
@@ -766,7 +981,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "95",
@@ -784,7 +1003,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "97",
@@ -793,7 +1016,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "98",
@@ -802,7 +1029,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "99",
@@ -811,7 +1042,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc6335\" "
+      }
+    ]
   },
   {
     "ports": "101",
@@ -865,7 +1100,11 @@
     "udp": "no",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\" "
+      }
+    ]
   },
   {
     "ports": "107",
@@ -903,6 +1142,9 @@
     "dccp": null,
     "citation_urls": [
       {
+        "url": "Inline reference: name=\"apple-kb-HT202944\" "
+      },
+      {
         "url": "https://www.rfc-editor.org/info/rfc1081 ",
         "access_date": "2016-10-17 "
       },
@@ -937,7 +1179,11 @@
     "udp": "no",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\" "
+      }
+    ]
   },
   {
     "ports": "113",
@@ -984,6 +1230,9 @@
     "dccp": null,
     "citation_urls": [
       {
+        "url": "Inline reference: name=\"apple-kb-HT202944\" "
+      },
+      {
         "url": "https://www.rfc-editor.org/info/rfc977 ",
         "access_date": "2016-10-17 "
       },
@@ -1000,7 +1249,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\" "
+      }
+    ]
   },
   {
     "ports": "126",
@@ -1054,7 +1307,17 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\" "
+      },
+      {
+        "url": "Inline reference: name=\"rfc1001\" "
+      },
+      {
+        "url": "Inline reference: name=\"rfc1002\" "
+      }
+    ]
   },
   {
     "ports": "139",
@@ -1063,7 +1326,14 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc1001\" "
+      },
+      {
+        "url": "Inline reference: name=\"rfc1002\" "
+      }
+    ]
   },
   {
     "ports": "143",
@@ -1072,7 +1342,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\" "
+      }
+    ]
   },
   {
     "ports": "151",
@@ -1136,7 +1410,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc1340\""
+      }
+    ]
   },
   {
     "ports": "162",
@@ -1145,7 +1423,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc1340\""
+      }
+    ]
   },
   {
     "ports": "165",
@@ -1199,7 +1481,11 @@
     "udp": "maybe|assigned",
     "sctp": "yes",
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc4960\" "
+      }
+    ]
   },
   {
     "ports": "180",
@@ -1361,7 +1647,14 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\" "
+      },
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      }
+    ]
   },
   {
     "ports": "312",
@@ -1370,7 +1663,11 @@
     "udp": "no",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\" "
+      }
+    ]
   },
   {
     "ports": "318",
@@ -1537,7 +1834,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "399",
@@ -1564,7 +1865,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "433",
@@ -1591,7 +1896,20 @@
     "udp": "yes",
     "sctp": "yes",
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc4960\""
+      },
+      {
+        "url": "Inline reference: name=\"rfc7230\""
+      },
+      {
+        "url": "Inline reference: name=\"rfc7540\""
+      },
+      {
+        "url": "Inline reference: name=\"quic\""
+      }
+    ]
   },
   {
     "ports": "444",
@@ -1618,7 +1936,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\" "
+      }
+    ]
   },
   {
     "ports": "464",
@@ -1652,7 +1974,11 @@
     "udp": "no",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=IANAPortRegistry"
+      }
+    ]
   },
   {
     "ports": "475",
@@ -1697,7 +2023,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "502",
@@ -1760,7 +2090,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc1340\""
+      }
+    ]
   },
   {
     "ports": "514",
@@ -1778,7 +2112,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\" "
+      }
+    ]
   },
   {
     "ports": "515",
@@ -1787,7 +2125,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "517",
@@ -1868,7 +2210,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "533",
@@ -1940,7 +2286,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "550",
@@ -1949,7 +2299,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc1340\" "
+      }
+    ]
   },
   {
     "ports": "554",
@@ -1958,7 +2312,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "556",
@@ -2021,7 +2379,14 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=RFC8314\u00a71"
+      },
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "591",
@@ -2075,7 +2440,11 @@
     "udp": "no",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "631",
@@ -2084,7 +2453,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "631",
@@ -2111,7 +2484,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "639",
@@ -2219,7 +2596,14 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\""
+      },
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "662",
@@ -2381,7 +2765,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "750",
@@ -2705,7 +3093,14 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"vmware-kb-1022256\""
+      },
+      {
+        "url": "Inline reference: name=\"vmware-kb-1005189\""
+      }
+    ]
   },
   {
     "ports": "953",
@@ -2805,7 +3200,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "994",
@@ -2823,7 +3222,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "1010",
@@ -2841,7 +3244,11 @@
     "udp": "n/a|reserved",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      }
+    ]
   },
   {
     "ports": "1023",
@@ -2850,7 +3257,11 @@
     "udp": "n/a|reserved",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      }
+    ]
   },
   {
     "ports": "1023",
@@ -2860,6 +3271,12 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc7194\" "
+      },
+      {
+        "url": "Inline reference: name=\"rfc1227\" "
+      },
       {
         "url": "https://www-304.ibm.com/servers/resourcelink/svc00100.nsf/pages/zosv2r3sc236883/$file/idan400_v2r3.pdf",
         "access_date": "2018-04-20"
@@ -2945,7 +3362,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "1098",
@@ -2981,7 +3402,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"eset_user_guide_5_2\" "
+      }
+    ]
   },
   {
     "ports": "1113",
@@ -3006,7 +3431,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"blizzard\" "
+      }
+    ]
   },
   {
     "ports": "1144",
@@ -3069,7 +3498,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "1234",
@@ -3330,7 +3763,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"citrixblogger\""
+      }
+    ]
   },
   {
     "ports": "1500",
@@ -3348,7 +3785,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"ibm-support-swg21625297\""
+      }
+    ]
   },
   {
     "ports": "1503",
@@ -3475,7 +3916,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"enterprise1c-ports\""
+      }
+    ]
   },
   {
     "ports": "1542",
@@ -3484,7 +3929,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"enterprise1c-ports\""
+      }
+    ]
   },
   {
     "ports": "1545",
@@ -3493,7 +3942,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"enterprise1c-ports\""
+      }
+    ]
   },
   {
     "ports": "1547",
@@ -3511,7 +3964,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"enterprise1c-ports\""
+      }
+    ]
   },
   {
     "ports": "1550",
@@ -3529,7 +3986,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"enterprise1c-ports\""
+      }
+    ]
   },
   {
     "ports": "1581",
@@ -3547,7 +4008,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"ibm-support-swg21625297\""
+      }
+    ]
   },
   {
     "ports": "1582-1583",
@@ -3556,7 +4021,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"ibm-support-swg21625297\""
+      }
+    ]
   },
   {
     "ports": "1583",
@@ -3601,7 +4070,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"isketch-help\""
+      }
+    ]
   },
   {
     "ports": "1628",
@@ -3637,7 +4110,14 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"juniper-radius-overview\""
+      },
+      {
+        "url": "Inline reference: name=\"rfc6613\""
+      }
+    ]
   },
   {
     "ports": "1666",
@@ -3682,7 +4162,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "1707",
@@ -3745,7 +4229,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "1755",
@@ -3844,7 +4332,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "1935",
@@ -3984,7 +4476,11 @@
     "udp": "yes",
     "sctp": "yes",
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "2056",
@@ -3993,7 +4489,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"2k-support-201333253\""
+      }
+    ]
   },
   {
     "ports": "2080",
@@ -4029,7 +4529,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"cpanel-ckb-login\""
+      }
+    ]
   },
   {
     "ports": "2086",
@@ -4047,7 +4551,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"cpanel-ckb-login\""
+      }
+    ]
   },
   {
     "ports": "2087",
@@ -4056,7 +4564,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"cpanel-ckb-login\""
+      }
+    ]
   },
   {
     "ports": "2095",
@@ -4065,7 +4577,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"cpanel-ckb-login\""
+      }
+    ]
   },
   {
     "ports": "2096",
@@ -4074,7 +4590,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"cpanel-ckb-login\""
+      }
+    ]
   },
   {
     "ports": "2100",
@@ -4184,6 +4704,9 @@
     "dccp": null,
     "citation_urls": [
       {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      },
+      {
         "url": "https://support.apple.com/en-us/HT203609 ",
         "access_date": "2016-08-27"
       },
@@ -4200,7 +4723,17 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      },
+      {
+        "url": "Inline reference: name=\"apple-kb-HT203609\""
+      },
+      {
+        "url": "Inline reference: name=\"apple-dev-news-2020-10-09\""
+      }
+    ]
   },
   {
     "ports": "2197",
@@ -4263,7 +4796,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"eset_user_guide_5_2\" "
+      }
+    ]
   },
   {
     "ports": "2240",
@@ -4317,7 +4854,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"arma 3\" "
+      }
+    ]
   },
   {
     "ports": "2303",
@@ -4326,7 +4867,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"msft-kb-829469\""
+      }
+    ]
   },
   {
     "ports": "2305",
@@ -4335,7 +4880,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"arma 3\" "
+      }
+    ]
   },
   {
     "ports": "2351",
@@ -4533,7 +5082,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"orientdb-docs-dbserver\""
+      }
+    ]
   },
   {
     "ports": "2483",
@@ -4889,7 +5442,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "3010",
@@ -5006,7 +5563,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "3283",
@@ -5015,7 +5576,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "3290",
@@ -5042,7 +5607,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "3323",
@@ -5119,7 +5688,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"PSQLVx_SP3_readme\""
+      }
+    ]
   },
   {
     "ports": "3386",
@@ -5250,7 +5823,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"playstation-manual-ps4-nw_test\""
+      }
+    ]
   },
   {
     "ports": "3483",
@@ -5349,7 +5926,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "3645",
@@ -5376,7 +5957,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "3659",
@@ -5412,7 +5997,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "3690",
@@ -5421,7 +6010,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "3702",
@@ -5826,7 +6419,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "4116",
@@ -5952,7 +6549,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"orthanc-book-configuration\""
+      }
+    ]
   },
   {
     "ports": "4242",
@@ -6073,7 +6674,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"openocd\" "
+      }
+    ]
   },
   {
     "ports": "4444-4445",
@@ -6126,7 +6731,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "4500",
@@ -6135,7 +6744,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "4502-4534",
@@ -6252,7 +6865,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"eMule\" "
+      }
+    ]
   },
   {
     "ports": "4711",
@@ -6261,7 +6878,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"eMule\" "
+      }
+    ]
   },
   {
     "ports": "4713",
@@ -6622,7 +7243,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"ipfs-kubo-docker\""
+      }
+    ]
   },
   {
     "ports": "5002",
@@ -6640,7 +7265,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "5004",
@@ -6685,7 +7314,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"Hill\" "
+      }
+    ]
   },
   {
     "ports": "5022",
@@ -6775,7 +7408,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "5061",
@@ -6815,7 +7452,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"epics-r3.14-reference-manual\""
+      }
+    ]
   },
   {
     "ports": "5070",
@@ -6849,7 +7490,14 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"epics-pvAccessCPP-specification-wiki\""
+      },
+      {
+        "url": "Inline reference: name=\"epics-pvxs-pva-network-configuration\""
+      }
+    ]
   },
   {
     "ports": "5080",
@@ -6986,6 +7634,9 @@
     "dccp": null,
     "citation_urls": [
       {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      },
+      {
         "url": "https://www.vice.com/en/article/rip-aim-vgtrn/ ",
         "access_date": "2018-04-19 "
       }
@@ -7036,6 +7687,9 @@
     "dccp": null,
     "citation_urls": [
       {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      },
+      {
         "url": "http://tools.ietf.org/html/rfc3920 ",
         "access_date": " 2014-05-27"
       },
@@ -7052,7 +7706,14 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      },
+      {
+        "url": "Inline reference: name=\"apple-kb-HT203609\""
+      }
+    ]
   },
   {
     "ports": "5223",
@@ -7124,7 +7785,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"viber\" "
+      }
+    ]
   },
   {
     "ports": "5243",
@@ -7133,7 +7798,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"viber\" "
+      }
+    ]
   },
   {
     "ports": "5246",
@@ -7151,7 +7820,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=rfc5415 "
+      }
+    ]
   },
   {
     "ports": "5269",
@@ -7160,7 +7833,17 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      },
+      {
+        "url": "Inline reference: name=rfc3920 "
+      },
+      {
+        "url": "Inline reference: name=rfc6120 "
+      }
+    ]
   },
   {
     "ports": "5280",
@@ -7214,7 +7897,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=STUN "
+      }
+    ]
   },
   {
     "ports": "5349",
@@ -7223,7 +7910,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=TURN "
+      }
+    ]
   },
   {
     "ports": "5349",
@@ -7232,7 +7923,11 @@
     "udp": "n/a|reserved",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"rfc5780\""
+      }
+    ]
   },
   {
     "ports": "5351",
@@ -7250,7 +7945,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "5355",
@@ -7363,7 +8062,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "5433",
@@ -7669,7 +8372,11 @@
     "udp": "maybe|assigned",
     "sctp": "yes",
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"ampq\""
+      }
+    ]
   },
   {
     "ports": "5678",
@@ -7830,7 +8537,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "5905",
@@ -7893,7 +8604,14 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"Enter-PSSession\""
+      },
+      {
+        "url": "Inline reference: name=\"microsoft1\""
+      }
+    ]
   },
   {
     "ports": "5988-5989",
@@ -7956,7 +8674,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"Tigermeeting Admin User Manual\""
+      }
+    ]
   },
   {
     "ports": "6030-6031",
@@ -7965,7 +8687,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"Tigermeeting Admin User Manual\""
+      }
+    ]
   },
   {
     "ports": "6032",
@@ -7974,7 +8700,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"Tigermeeting Admin User Manual\""
+      }
+    ]
   },
   {
     "ports": "6050",
@@ -8073,7 +8803,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"blizzard\" "
+      }
+    ]
   },
   {
     "ports": "6112",
@@ -8091,7 +8825,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"blizzard\" "
+      }
+    ]
   },
   {
     "ports": "6121-6122",
@@ -8843,7 +9581,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "6980",
@@ -8969,7 +9711,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"Microsoft\""
+      }
+    ]
   },
   {
     "ports": "7023",
@@ -9005,7 +9751,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "7077",
@@ -9333,7 +10083,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "7777",
@@ -9432,7 +10186,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\""
+      }
+    ]
   },
   {
     "ports": "7890",
@@ -9473,7 +10231,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"docker-swarm-tutorial\""
+      }
+    ]
   },
   {
     "ports": "7979",
@@ -9510,6 +10272,9 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      },
       {
         "url": "https://www.icecast.org/docs/icecast-2.4.1/config-file.html",
         "access_date": "2023-09-13"
@@ -9550,7 +10315,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "8005",
@@ -9595,7 +10364,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"appassure-kb-firewall-port\""
+      }
+    ]
   },
   {
     "ports": "8007",
@@ -9631,7 +10404,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "8008",
@@ -9699,7 +10476,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"odoo-doc-5.0-install-linux-web\""
+      }
+    ]
   },
   {
     "ports": "8074",
@@ -9839,7 +10620,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"couchbase-dev-doc-server-ports\""
+      }
+    ]
   },
   {
     "ports": "8093",
@@ -10105,7 +10890,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"Apache Synapse\""
+      }
+    ]
   },
   {
     "ports": "8281",
@@ -10141,7 +10930,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      }
+    ]
   },
   {
     "ports": "8332",
@@ -10168,7 +10961,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"vmware-server-2.0-rc2-releasenotes\""
+      }
+    ]
   },
   {
     "ports": "8334",
@@ -10276,7 +11073,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "8443",
@@ -10312,7 +11113,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"matrix-homeserver\" "
+      }
+    ]
   },
   {
     "ports": "8484",
@@ -10357,7 +11162,14 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"msft-tn-bb693717\""
+      },
+      {
+        "url": "Inline reference: name=\"msft-tn-hh852346\""
+      }
+    ]
   },
   {
     "ports": "8555",
@@ -10461,7 +11273,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"routeros-api\""
+      }
+    ]
   },
   {
     "ports": "8765",
@@ -10637,7 +11453,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"osxdaily-mamp\" "
+      }
+    ]
   },
   {
     "ports": "8920",
@@ -10646,7 +11466,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"jellyfin\" "
+      }
+    ]
   },
   {
     "ports": "8983",
@@ -10664,7 +11488,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"geti2p-ports\""
+      }
+    ]
   },
   {
     "ports": "8998",
@@ -10673,7 +11501,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"geti2p-ports\""
+      }
+    ]
   },
   {
     "ports": "8999",
@@ -10682,7 +11514,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"geti2p-ports\""
+      }
+    ]
   },
   {
     "ports": "9000",
@@ -10876,7 +11712,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "9008",
@@ -11074,7 +11914,11 @@
     "udp": "maybe|assigned",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "9101",
@@ -11326,7 +12170,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"mfs-manual3.0-ports\""
+      }
+    ]
   },
   {
     "ports": "9421",
@@ -11335,7 +12183,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"mfs-manual3.0-ports\""
+      }
+    ]
   },
   {
     "ports": "9422",
@@ -11344,7 +12196,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"mfs-manual3.0-ports\""
+      }
+    ]
   },
   {
     "ports": "9425",
@@ -11353,7 +12209,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"mfs-manual3.0-ports\""
+      }
+    ]
   },
   {
     "ports": "9443",
@@ -11461,7 +12321,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"viber\" "
+      }
+    ]
   },
   {
     "ports": "9800",
@@ -11506,7 +12370,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\":0\" "
+      }
+    ]
   },
   {
     "ports": "9898",
@@ -11560,7 +12428,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"tvh-wiki-install-initial-setup\""
+      }
+    ]
   },
   {
     "ports": "9987",
@@ -11668,7 +12540,11 @@
     "udp": "no",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"hub.docker.com\""
+      }
+    ]
   },
   {
     "ports": "10022",
@@ -11785,7 +12661,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"F-prot\" "
+      }
+    ]
   },
   {
     "ports": "10212",
@@ -11947,7 +12827,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "11214",
@@ -12124,7 +13008,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"makerbot\" "
+      }
+    ]
   },
   {
     "ports": "12345",
@@ -12507,7 +13395,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "16384-16387",
@@ -12516,7 +13408,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "16393-16402",
@@ -12525,7 +13421,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "16403-16472",
@@ -12534,7 +13434,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"apple-kb-HT202944\""
+      }
+    ]
   },
   {
     "ports": "16400",
@@ -12579,7 +13483,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\""
+      }
+    ]
   },
   {
     "ports": "17225",
@@ -12588,7 +13496,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\""
+      }
+    ]
   },
   {
     "ports": "17333",
@@ -12624,7 +13536,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"dmxcontrol_3\" "
+      }
+    ]
   },
   {
     "ports": "17476",
@@ -12633,7 +13549,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"dmxcontrol_3\" "
+      }
+    ]
   },
   {
     "ports": "17500",
@@ -12660,7 +13580,11 @@
     "udp": "no",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"monero-setup-1\" "
+      }
+    ]
   },
   {
     "ports": "18091",
@@ -12881,7 +13805,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"minecraft wiki\""
+      }
+    ]
   },
   {
     "ports": "19150",
@@ -12917,7 +13845,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"gtalk_voice\" "
+      }
+    ]
   },
   {
     "ports": "19302",
@@ -12926,7 +13858,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"gtalk_voice\" "
+      }
+    ]
   },
   {
     "ports": "19531",
@@ -12980,7 +13916,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"4D_ports\" "
+      }
+    ]
   },
   {
     "ports": "19814",
@@ -12989,7 +13929,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"4D_ports\" "
+      }
+    ]
   },
   {
     "ports": "19818",
@@ -13007,7 +13951,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"auto\""
+      }
+    ]
   },
   {
     "ports": "19999",
@@ -13052,7 +14000,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"support.vonage.com\""
+      }
+    ]
   },
   {
     "ports": "20560",
@@ -13464,7 +14416,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"steam-support-8571-GLVN-8711\""
+      }
+    ]
   },
   {
     "ports": "27015-27018",
@@ -13482,7 +14438,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"steam-support-8571-GLVN-8711\""
+      }
+    ]
   },
   {
     "ports": "27015-27030",
@@ -13491,7 +14451,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"steam-support-8571-GLVN-8711\""
+      }
+    ]
   },
   {
     "ports": "27016",
@@ -13518,7 +14482,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"steam-support-8571-GLVN-8711\""
+      }
+    ]
   },
   {
     "ports": "27036",
@@ -13527,7 +14495,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"steam-support-8571-GLVN-8711\""
+      }
+    ]
   },
   {
     "ports": "27100",
@@ -13599,7 +14571,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      }
+    ]
   },
   {
     "ports": "28001",
@@ -13649,7 +14625,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"PAN-OS_HALinksAndBackupLinks\""
+      }
+    ]
   },
   {
     "ports": "28443",
@@ -13658,7 +14638,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"EDU-120_10\""
+      }
+    ]
   },
   {
     "ports": "28769",
@@ -13667,7 +14651,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"PAN-OS_HALinksAndBackupLinks\""
+      }
+    ]
   },
   {
     "ports": "28770",
@@ -13676,7 +14664,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"PAN-OS_HALinksAndBackupLinks\""
+      }
+    ]
   },
   {
     "ports": "28770-28771",
@@ -13739,7 +14731,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      }
+    ]
   },
   {
     "ports": "29070",
@@ -13757,7 +14753,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"nintendo-wfc-instruction-booklet\""
+      }
+    ]
   },
   {
     "ports": "29920",
@@ -13766,7 +14766,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"nintendo-wfc-instruction-booklet\""
+      }
+    ]
   },
   {
     "ports": "30000",
@@ -13820,7 +14824,11 @@
     "udp": "no",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"hub.docker.com\""
+      }
+    ]
   },
   {
     "ports": "30120",
@@ -14240,7 +15248,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"brainy-lab.com\""
+      }
+    ]
   },
   {
     "ports": "49151",
@@ -14249,7 +15261,11 @@
     "udp": "n/a|reserved",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=IANA "
+      }
+    ]
   },
   {
     "ports": "49152-65535",
@@ -14267,7 +15283,11 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"EDU-120_10\""
+      }
+    ]
   },
   {
     "ports": "50160",
@@ -14289,7 +15309,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"s-connect\""
+      }
+    ]
   },
   {
     "ports": "51413",
@@ -14334,7 +15358,11 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"visca-over-ip\""
+      }
+    ]
   },
   {
     "ports": "53317",
