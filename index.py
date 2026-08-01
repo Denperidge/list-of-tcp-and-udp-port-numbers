@@ -7,8 +7,7 @@ from typing import Any, Callable, Literal, NotRequired, TypedDict, get_args, ove
 from re import IGNORECASE, findall, sub, match, escape
 from pathlib import Path
 
-# TODO is is-dead attr
-# TODO: make sure cite verification needed is treated as None
+# TODO is is-dead attr?
 
 """ LOG FUNCS """
 def info(message: Any):
@@ -17,8 +16,8 @@ def info(message: Any):
 def debug(message: Any):
     print(f"\t[DEBUG] {message}")
 
-def error(message: Any):
-    print(f">> ERROR: {message} <<")
+def warn(message: Any):
+    print(f">> [WARN]: {message} <<")
 
 
 """ Classes, types & consts """
@@ -354,7 +353,11 @@ if __name__ == "__main__":
 
             debug(entry)
 
-            out.append(entry)  
+            out.append(entry)
+            
+            if not entry.is_cited():
+                warn(f"{entry.ports} isn't cited")
+                
 
     for test in tests:
         debug(f"Test: {test}")
