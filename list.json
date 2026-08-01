@@ -50,14 +50,6 @@
       {
         "url": "https://www.rfc-editor.org/info/rfc2896 ",
         "access_date": "2018-07-13"
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc407 ",
-        "access_date": "2018-04-08"
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc2896 ",
-        "access_date": "2018-07-13"
       }
     ]
   },
@@ -69,14 +61,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://www.rfc-editor.org/info/rfc862 ",
-        "access_date": "2016-09-28"
-      },
-      {
-        "url": "https://support.apple.com/en-us/HT202944 ",
-        "access_date": "2021-10-19"
-      },
       {
         "url": "https://www.rfc-editor.org/info/rfc862 ",
         "access_date": "2016-09-28"
@@ -118,13 +102,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "http://etutorials.org/Networking/network+security+assessment/Chapter+5.+Assessing+Remote+Information+Services/5.2+systat+and+netstat ",
-        "access_date": "2010-11-28 "
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc866 "
-      },
       {
         "url": "http://etutorials.org/Networking/network+security+assessment/Chapter+5.+Assessing+Remote+Information+Services/5.2+systat+and+netstat ",
         "access_date": "2010-11-28 "
@@ -176,14 +153,6 @@
       {
         "url": "https://www.rfc-editor.org/info/rfc1312 ",
         "access_date": "2016-09-27"
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc1159 ",
-        "access_date": "2016-09-27"
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc1312 ",
-        "access_date": "2016-09-27"
       }
     ]
   },
@@ -220,14 +189,6 @@
       {
         "url": "https://www.rfc-editor.org/info/rfc959 ",
         "access_date": "2016-09-27"
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc765 ",
-        "access_date": "2016-09-27"
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc959 ",
-        "access_date": "2016-09-27"
       }
     ]
   },
@@ -257,14 +218,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml",
-        "access_date": "2025-07-30"
-      },
-      {
-        "url": "https://www.postfix.org/lmtp.8.html",
-        "access_date": "2025-07-30"
-      },
       {
         "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml",
         "access_date": "2025-07-30"
@@ -443,14 +396,6 @@
       {
         "url": "https://datatracker.ietf.org/doc/html/opsawg-tacacs-10",
         "access_date": "2018-07-18"
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc1492 ",
-        "access_date": "2016-09-28"
-      },
-      {
-        "url": "https://datatracker.ietf.org/doc/html/opsawg-tacacs-10",
-        "access_date": "2018-07-18"
       }
     ]
   },
@@ -534,14 +479,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://www.rfc-editor.org/info/rfc1060 ",
-        "access_date": "2018-07-24"
-      },
-      {
-        "url": "https://www.rfc-editor.org/ien/ien169.txt",
-        "access_date": "2018-07-18"
-      },
       {
         "url": "https://www.rfc-editor.org/info/rfc1060 ",
         "access_date": "2018-07-24"
@@ -675,14 +612,6 @@
       {
         "url": "https://www.rfc-editor.org/info/rfc1288 ",
         "access_date": "2016-10-16 "
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc742 ",
-        "access_date": "2016-10-16"
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc1288 ",
-        "access_date": "2016-10-16 "
       }
     ]
   },
@@ -766,14 +695,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://www.rfc-editor.org/info/rfc1510 ",
-        "access_date": "2016-10-16 "
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc4120 ",
-        "access_date": "2016-10-16 "
-      },
       {
         "url": "https://www.rfc-editor.org/info/rfc1510 ",
         "access_date": "2016-10-16 "
@@ -916,14 +837,6 @@
       {
         "url": "https://www.rfc-editor.org/info/rfc1006 ",
         "access_date": "2016-10-17 "
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc983 ",
-        "access_date": "2016-10-17 "
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc1006 ",
-        "access_date": "2016-10-17 "
       }
     ]
   },
@@ -989,14 +902,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://www.rfc-editor.org/info/rfc1081 ",
-        "access_date": "2016-10-17 "
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc1939 ",
-        "access_date": "2016-10-17 "
-      },
       {
         "url": "https://www.rfc-editor.org/info/rfc1081 ",
         "access_date": "2016-10-17 "
@@ -1085,14 +990,6 @@
       {
         "url": "https://www.rfc-editor.org/info/rfc3977 ",
         "access_date": "2016-10-17 "
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc977 ",
-        "access_date": "2016-10-17 "
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc3977 ",
-        "access_date": "2016-10-17 "
       }
     ]
   },
@@ -1140,14 +1037,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://www.rfc-editor.org/info/rfc1001 ",
-        "access_date": "2016-10-17"
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc1002 ",
-        "access_date": "2016-10-17"
-      },
       {
         "url": "https://www.rfc-editor.org/info/rfc1001 ",
         "access_date": "2016-10-17"
@@ -1205,10 +1094,6 @@
       {
         "url": "https://www.rfc-editor.org/info/rfc1068 ",
         "access_date": "2016-10-17 "
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc1068 ",
-        "access_date": "2016-10-17 "
       }
     ]
   },
@@ -1238,10 +1123,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://www.rfc-editor.org/info/rfc1056 ",
-        "access_date": "2016-10-17 "
-      },
       {
         "url": "https://www.rfc-editor.org/info/rfc1056 ",
         "access_date": "2016-10-17 "
@@ -1592,10 +1473,6 @@
       {
         "url": "http://www.nai.com/asp_set/anti_virus/alerts/faq.asp",
         "access_date": "2013-10-26"
-      },
-      {
-        "url": "http://www.nai.com/asp_set/anti_virus/alerts/faq.asp",
-        "access_date": "2013-10-26"
       }
     ]
   },
@@ -1760,12 +1637,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=465 "
-      },
-      {
-        "url": "https://www.rfc-editor.org/rfc/rfc8314.html "
-      },
       {
         "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=465 "
       },
@@ -2824,14 +2695,6 @@
       {
         "url": "https://kb.vmware.com/kb/1005189 ",
         "access_date": "2016-10-06 "
-      },
-      {
-        "url": "https://kb.vmware.com/kb/1022256 ",
-        "access_date": "2016-10-06 "
-      },
-      {
-        "url": "https://kb.vmware.com/kb/1005189 ",
-        "access_date": "2016-10-06 "
       }
     ]
   },
@@ -2852,10 +2715,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://www.centos.org/docs/5/html/Deployment_Guide-en-US/ ",
-        "access_date": "2016-10-06 "
-      },
       {
         "url": "https://www.centos.org/docs/5/html/Deployment_Guide-en-US/ ",
         "access_date": "2016-10-06 "
@@ -2888,10 +2747,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://technet.microsoft.com/en-us/library/cc527519(v=ws.10).aspx ",
-        "access_date": "2017-07-05 "
-      },
       {
         "url": "https://technet.microsoft.com/en-us/library/cc527519(v=ws.10).aspx ",
         "access_date": "2017-07-05 "
@@ -3005,10 +2860,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://www-304.ibm.com/servers/resourcelink/svc00100.nsf/pages/zosv2r3sc236883/$file/idan400_v2r3.pdf",
-        "access_date": "2018-04-20"
-      },
       {
         "url": "https://www-304.ibm.com/servers/resourcelink/svc00100.nsf/pages/zosv2r3sc236883/$file/idan400_v2r3.pdf",
         "access_date": "2018-04-20"
@@ -3546,10 +3397,6 @@
       {
         "url": "https://docs.oracle.com/cd/B19306_01/network.102/b14213/protocoladd.htm#i470539 ",
         "access_date": "2015-11-27"
-      },
-      {
-        "url": "https://docs.oracle.com/cd/B19306_01/network.102/b14213/protocoladd.htm#i470539 ",
-        "access_date": "2015-11-27"
       }
     ]
   },
@@ -3570,10 +3417,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "http://www.toadworld.com/platforms/oracle/w/wiki/1635.oracle-default-port-numbers ",
-        "access_date": "2016-08-27"
-      },
       {
         "url": "http://www.toadworld.com/platforms/oracle/w/wiki/1635.oracle-default-port-numbers ",
         "access_date": "2016-08-27"
@@ -3615,14 +3458,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://1c-dn.com/library/system_requirements/#Ports",
-        "access_date": " 6 June 2018"
-      },
-      {
-        "url": "https://1c-dn.com/library/administrator_guide/",
-        "access_date": " 6 June 2018"
-      },
       {
         "url": "https://1c-dn.com/library/system_requirements/#Ports",
         "access_date": " 6 June 2018"
@@ -3936,14 +3771,6 @@
       {
         "url": "https://www.novell.com/documentation/zenworks114/zen11_sys_servers/data/b18151xi.html?view=print ",
         "access_date": "2016-08-07 "
-      },
-      {
-        "url": "https://www.novell.com/support/kb/doc.php?id=3880659 ",
-        "access_date": "2016-08-27"
-      },
-      {
-        "url": "https://www.novell.com/documentation/zenworks114/zen11_sys_servers/data/b18151xi.html?view=print ",
-        "access_date": "2016-08-07 "
       }
     ]
   },
@@ -4036,10 +3863,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://helpx.adobe.com/adobe-media-server/kb/ports-firewalls-flash-media-server.html ",
-        "access_date": "2016-08-27 "
-      },
       {
         "url": "https://helpx.adobe.com/adobe-media-server/kb/ports-firewalls-flash-media-server.html ",
         "access_date": "2016-08-27 "
@@ -4360,14 +4183,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://support.apple.com/en-us/HT203609 ",
-        "access_date": "2016-08-27"
-      },
-      {
-        "url": "https://developer.apple.com/news/?id=c88acm2b ",
-        "access_date": "2022-10-04"
-      },
       {
         "url": "https://support.apple.com/en-us/HT203609 ",
         "access_date": "2016-08-27"
@@ -4771,14 +4586,6 @@
       {
         "url": "https://www.rfc-editor.org/info/rfc2730 ",
         "access_date": "2016-08-28 "
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc2730 ",
-        "access_date": "2016-08-28 "
-      },
-      {
-        "url": "https://www.rfc-editor.org/info/rfc2730 ",
-        "access_date": "2016-08-28 "
       }
     ]
   },
@@ -4851,14 +4658,6 @@
       {
         "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=2638 ",
         "access_date": " 2013-10-26"
-      },
-      {
-        "url": "http://dcx.sybase.com/index.html#sa160/en/dbadmin/serverport-network-conparm.html",
-        "access_date": "27 February 2017"
-      },
-      {
-        "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=2638 ",
-        "access_date": " 2013-10-26"
       }
     ]
   },
@@ -4870,14 +4669,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://xbtt.sourceforge.net/tracker/ ",
-        "access_date": "2016-08-28 "
-      },
-      {
-        "url": "http://xbtt.sourceforge.net/tracker/ ",
-        "access_date": "2016-08-28 "
-      },
       {
         "url": "https://xbtt.sourceforge.net/tracker/ ",
         "access_date": "2016-08-28 "
@@ -5040,10 +4831,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "http://docs.meteor.com/#quickstart",
-        "access_date": " 16 March 2015"
-      },
       {
         "url": "http://docs.meteor.com/#quickstart",
         "access_date": " 16 March 2015"
@@ -5286,10 +5073,6 @@
       {
         "url": "http://eggwiki.org/Eggdrop.conf#Botnet.2FDCC.2FTelnet ",
         "access_date": "2014-02-20 "
-      },
-      {
-        "url": "http://eggwiki.org/Eggdrop.conf#Botnet.2FDCC.2FTelnet ",
-        "access_date": "2014-02-20 "
       }
     ]
   },
@@ -5454,10 +5237,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "http://manuals.playstation.net/document/en/ps4/ ",
-        "access_date": "2017-04-09 "
-      },
       {
         "url": "http://manuals.playstation.net/document/en/ps4/ ",
         "access_date": "2017-04-09 "
@@ -6194,9 +5973,6 @@
     "citation_urls": [
       {
         "url": "http://docs.docker.io/en/latest/use/basics/"
-      },
-      {
-        "url": "http://docs.docker.io/en/latest/use/basics/"
       }
     ]
   },
@@ -6325,13 +6101,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "http://tools.ietf.org/html/rfc8915 ",
-        "access_date": " 2024-10-10 "
-      },
-      {
-        "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=4460"
-      },
       {
         "url": "http://tools.ietf.org/html/rfc8915 ",
         "access_date": " 2024-10-10 "
@@ -6703,10 +6472,6 @@
       {
         "url": "http://wiki.flightgear.org/Howto:_Multiplayer ",
         "access_date": " 2014-05-27"
-      },
-      {
-        "url": "http://wiki.flightgear.org/Howto:_Multiplayer ",
-        "access_date": " 2014-05-27"
       }
     ]
   },
@@ -6790,10 +6555,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://developer.apple.com/forums/thread/682332",
-        "access_date": "2021-10-27"
-      },
       {
         "url": "https://developer.apple.com/forums/thread/682332",
         "access_date": "2021-10-27"
@@ -7078,12 +6839,6 @@
       },
       {
         "url": "https://epics-base.github.io/pvxs/netconfig.html"
-      },
-      {
-        "url": "https://github.com/epics-base/pvAccessCPP/wiki/protocol"
-      },
-      {
-        "url": "https://epics-base.github.io/pvxs/netconfig.html"
       }
     ]
   },
@@ -7233,10 +6988,6 @@
       {
         "url": "https://www.vice.com/en/article/rip-aim-vgtrn/ ",
         "access_date": "2018-04-19 "
-      },
-      {
-        "url": "https://www.vice.com/en/article/rip-aim-vgtrn/ ",
-        "access_date": "2018-04-19 "
       }
     ]
   },
@@ -7284,14 +7035,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "http://tools.ietf.org/html/rfc3920 ",
-        "access_date": " 2014-05-27"
-      },
-      {
-        "url": "http://tools.ietf.org/html/rfc6120 ",
-        "access_date": " 2014-05-27"
-      },
       {
         "url": "http://tools.ietf.org/html/rfc3920 ",
         "access_date": " 2014-05-27"
@@ -7551,14 +7294,6 @@
       {
         "url": "http://gamingpwnage.webs.com/PC/archive/fusion_manual.txt ",
         "access_date": "2013-10-26 "
-      },
-      {
-        "url": "http://www.arcadezone.org/emulation/genesis/Readme.txt ",
-        "access_date": "2013-10-26 "
-      },
-      {
-        "url": "http://gamingpwnage.webs.com/PC/archive/fusion_manual.txt ",
-        "access_date": "2013-10-26 "
       }
     ]
   },
@@ -7570,10 +7305,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://datatracker.ietf.org/doc/html/opsawg-tacacs-10",
-        "access_date": "2017-05-19 "
-      },
       {
         "url": "https://datatracker.ietf.org/doc/html/opsawg-tacacs-10",
         "access_date": "2017-05-19 "
@@ -7856,14 +7587,6 @@
       {
         "url": "https://support.symantec.com/en_US/article.TECH107578.html",
         "access_date": "2017-04-18"
-      },
-      {
-        "url": "https://support.symantec.com/en_US/article.TECH106675.html",
-        "access_date": "2017-04-18"
-      },
-      {
-        "url": "https://support.symantec.com/en_US/article.TECH107578.html",
-        "access_date": "2017-04-18"
       }
     ]
   },
@@ -7965,13 +7688,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://help.mikrotik.com/docs/display/ROS/Neighbor+discovery "
-      },
-      {
-        "url": "https://wiki.mikrotik.com/wiki/Manual:IP/Services#Protocols_and_ports ",
-        "access_date": "2024-02-22 "
-      },
       {
         "url": "https://help.mikrotik.com/docs/display/ROS/Neighbor+discovery "
       },
@@ -8160,14 +7876,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://technet.microsoft.com/en-us/library/hh849707.aspx",
-        "access_date": " 2013-10-31"
-      },
-      {
-        "url": " https://support.microsoft.com/en-us/help/2019527/how-to-configure-winrm-for-https ",
-        "access_date": " 2019-04-16"
-      },
       {
         "url": "https://technet.microsoft.com/en-us/library/hh849707.aspx",
         "access_date": " 2013-10-31"
@@ -8402,10 +8110,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "http://www.objectdb.com/java/jpa ",
-        "access_date": "2016-11-21 "
-      },
       {
         "url": "http://www.objectdb.com/java/jpa ",
         "access_date": "2016-11-21 "
@@ -9404,10 +9108,6 @@
       {
         "url": "https://fah.stanford.edu/projects/FAHClient/wiki/WebClientAuthenticatedSessionIDs ",
         "access_date": "2014-05-27 "
-      },
-      {
-        "url": "https://fah.stanford.edu/projects/FAHClient/wiki/WebClientAuthenticatedSessionIDs ",
-        "access_date": "2014-05-27 "
       }
     ]
   },
@@ -9482,13 +9182,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://datatracker.ietf.org/doc/html/opsawg-tacacs-10",
-        "access_date": "2017-03-27 "
-      },
-      {
-        "url": "N/A (conference)"
-      },
       {
         "url": "https://datatracker.ietf.org/doc/html/opsawg-tacacs-10",
         "access_date": "2017-03-27 "
@@ -9770,10 +9463,6 @@
       {
         "url": "http://livedocs.adobe.com/flex/3/html/help.html?content=debugging_02.html ",
         "access_date": "2014-05-27 "
-      },
-      {
-        "url": "http://livedocs.adobe.com/flex/3/html/help.html?content=debugging_02.html ",
-        "access_date": "2014-05-27 "
       }
     ]
   },
@@ -9821,10 +9510,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://www.icecast.org/docs/icecast-2.4.1/config-file.html",
-        "access_date": "2023-09-13"
-      },
       {
         "url": "https://www.icecast.org/docs/icecast-2.4.1/config-file.html",
         "access_date": "2023-09-13"
@@ -9986,10 +9671,6 @@
       {
         "url": "http://book.orthanc-server.com/ ",
         "access_date": "2017-02-12 "
-      },
-      {
-        "url": "http://book.orthanc-server.com/ ",
-        "access_date": "2017-02-12 "
       }
     ]
   },
@@ -10055,10 +9736,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://proquest.safaribooksonline.com/9780596101060 ",
-        "access_date": "2018-10-18 "
-      },
       {
         "url": "https://proquest.safaribooksonline.com/9780596101060 ",
         "access_date": "2018-10-18 "
@@ -10181,10 +9858,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://jellyfin.org/docs/general/networking/index.html",
-        "access_date": "2021-08-29"
-      },
       {
         "url": "https://jellyfin.org/docs/general/networking/index.html",
         "access_date": "2021-08-29"
@@ -10706,10 +10379,6 @@
       {
         "url": "https://docs.chia.net/rpc ",
         "access_date": "2023-07-23 "
-      },
-      {
-        "url": "https://docs.chia.net/rpc ",
-        "access_date": "2023-07-23 "
       }
     ]
   },
@@ -10773,14 +10442,6 @@
       {
         "url": "http://www.ultrafractal.com/help/ ",
         "access_date": "2016-10-25 "
-      },
-      {
-        "url": "http://www.ultrafractal.com/help/ ",
-        "access_date": "2016-10-25 "
-      },
-      {
-        "url": "http://www.ultrafractal.com/help/ ",
-        "access_date": "2016-10-25 "
       }
     ]
   },
@@ -10816,13 +10477,6 @@
       {
         "url": "https://github.com/amark/gun/commit/d65e2c3f880e08fd8e9b4742716adb9685a3a087",
         "access_date": "2018-09-27"
-      },
-      {
-        "url": "https://github.com/internetarchive/dweb-transports#implementation-on-gun"
-      },
-      {
-        "url": "https://github.com/amark/gun/commit/d65e2c3f880e08fd8e9b4742716adb9685a3a087",
-        "access_date": "2018-09-27"
       }
     ]
   },
@@ -10834,10 +10488,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://support.teamspeakusa.com/index.php?%2FKnowledgebase%2FArticle%2FView%2F79%2F19%2Fwhich-ports-does-the-teamspeak-2-server-use ",
-        "access_date": "2016-10-25 "
-      },
       {
         "url": "https://support.teamspeakusa.com/index.php?%2FKnowledgebase%2FArticle%2FView%2F79%2F19%2Fwhich-ports-does-the-teamspeak-2-server-use ",
         "access_date": "2016-10-25 "
@@ -10864,10 +10514,6 @@
       {
         "url": "https://docs.tenable.com/nessus/6_8/Content/Resources/PDF/Nessus_6_8.pdf ",
         "access_date": "2017-07-06 "
-      },
-      {
-        "url": "https://docs.tenable.com/nessus/6_8/Content/Resources/PDF/Nessus_6_8.pdf ",
-        "access_date": "2017-07-06 "
       }
     ]
   },
@@ -10879,14 +10525,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "http://www.computerworld.com/article/2525727/networking/first-look--opera-unite-alpha-lets-you-share-files----but-is-it-safe-.html ",
-        "access_date": "2016-10-25 "
-      },
-      {
-        "url": "http://lifehacker.com/5472050/whats-the-easiest-way-to-share-large-files-and-media-with-friends ",
-        "access_date": "2016-10-25 "
-      },
       {
         "url": "http://www.computerworld.com/article/2525727/networking/first-look--opera-unite-alpha-lets-you-share-files----but-is-it-safe-.html ",
         "access_date": "2016-10-25 "
@@ -10917,10 +10555,6 @@
       {
         "url": "https://www.ibm.com/support/knowledgecenter/SS7JFU_8.0.0 ",
         "access_date": "2016-10-25"
-      },
-      {
-        "url": "https://www.ibm.com/support/knowledgecenter/SS7JFU_8.0.0 ",
-        "access_date": "2016-10-25"
       }
     ]
   },
@@ -10932,14 +10566,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "http://mqtt.org/faq ",
-        "access_date": "2016-10-25 "
-      },
-      {
-        "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html ",
-        "access_date": "2016-10-25 "
-      },
       {
         "url": "http://mqtt.org/faq ",
         "access_date": "2016-10-25 "
@@ -10985,14 +10611,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://ipython.org/ipython-doc/3/ ",
-        "access_date": "2016-10-25 "
-      },
-      {
-        "url": "https://jupyter.readthedocs.io/en/latest/ ",
-        "access_date": "2016-10-25 "
-      },
       {
         "url": "https://ipython.org/ipython-doc/3/ ",
         "access_date": "2016-10-25 "
@@ -11146,10 +10764,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://github.com/qbittorrent/qBittorrent/wiki/How-to-use-qBittorrent-as-a-tracker ",
-        "access_date": " 27 June 2015"
-      },
       {
         "url": "https://github.com/qbittorrent/qBittorrent/wiki/How-to-use-qBittorrent-as-a-tracker ",
         "access_date": " 27 June 2015"
@@ -12436,10 +12050,6 @@
       {
         "url": "http://wiki.secondlife.com/wiki/Authentication_Flow#Step_4",
         "access_date": "26 July 2017"
-      },
-      {
-        "url": "http://wiki.secondlife.com/wiki/Authentication_Flow#Step_4",
-        "access_date": "26 July 2017"
       }
     ]
   },
@@ -12451,10 +12061,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "http://wiki.secondlife.com/wiki/LSL_HTTP_server#Functions",
-        "access_date": "26 July 2017"
-      },
       {
         "url": "http://wiki.secondlife.com/wiki/LSL_HTTP_server#Functions",
         "access_date": "26 July 2017"
@@ -12478,10 +12084,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "http://docs.graylog.org/en/latest/pages/gelf.html",
-        "access_date": "2017-08-10"
-      },
       {
         "url": "http://docs.graylog.org/en/latest/pages/gelf.html",
         "access_date": "2017-08-10"
@@ -12532,10 +12134,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "http://www.cubeworldwiki.net/index.php/Server ",
-        "access_date": "2013-10-08 "
-      },
       {
         "url": "http://www.cubeworldwiki.net/index.php/Server ",
         "access_date": "2013-10-08 "
@@ -13273,10 +12871,6 @@
       {
         "url": "https://minecraft.wiki/w/Bedrock_Dedicated_Server ",
         "access_date": "24 September 2023 "
-      },
-      {
-        "url": "https://minecraft.wiki/w/Bedrock_Dedicated_Server ",
-        "access_date": "24 September 2023 "
       }
     ]
   },
@@ -13651,10 +13245,6 @@
       {
         "url": "https://modrepo.de/minecraft/voicechat/wiki/server_setup_self_hosted ",
         "access_date": "3 October 2025"
-      },
-      {
-        "url": "https://modrepo.de/minecraft/voicechat/wiki/server_setup_self_hosted ",
-        "access_date": "3 October 2025"
       }
     ]
   },
@@ -13714,10 +13304,6 @@
       {
         "url": "https://minecraft.wiki/w/Server.properties#Default_content",
         "access_date": "2025-07-25"
-      },
-      {
-        "url": "https://minecraft.wiki/w/Server.properties#Default_content",
-        "access_date": "2025-07-25"
       }
     ]
   },
@@ -13729,10 +13315,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://minecraft.wiki/w/Query#server.properties",
-        "access_date": "2025-07-25"
-      },
       {
         "url": "https://minecraft.wiki/w/Query#server.properties",
         "access_date": "2025-07-25"
@@ -13759,10 +13341,6 @@
       {
         "url": "https://www.minecraft.net/en-us/article/minecraft-snapshot-25w35a",
         "access_date": "2025-08-26"
-      },
-      {
-        "url": "https://www.minecraft.net/en-us/article/minecraft-snapshot-25w35a",
-        "access_date": "2025-08-26"
       }
     ]
   },
@@ -13783,10 +13361,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "http://collectd.org/wiki/index.php/Networking_introduction ",
-        "access_date": " 2013-10-08"
-      },
       {
         "url": "http://collectd.org/wiki/index.php/Networking_introduction ",
         "access_date": " 2013-10-08"
@@ -14047,10 +13621,6 @@
       {
         "url": "https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server ",
         "access_date": "2017-06-29 "
-      },
-      {
-        "url": "https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server ",
-        "access_date": "2017-06-29 "
       }
     ]
   },
@@ -14145,9 +13715,6 @@
     "citation_urls": [
       {
         "url": "https://www.nintendo.com/consumer/gameslist/manuals/DS_Nintendo_WFC.pdf "
-      },
-      {
-        "url": "https://www.nintendo.com/consumer/gameslist/manuals/DS_Nintendo_WFC.pdf "
       }
     ]
   },
@@ -14159,10 +13726,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://support.activision.com/articles/en_US/FAQ/Ports-Used-for-Call-of-Duty-Games ",
-        "access_date": "2017-06-30"
-      },
       {
         "url": "https://support.activision.com/articles/en_US/FAQ/Ports-Used-for-Call-of-Duty-Games ",
         "access_date": "2017-06-30"
@@ -14270,10 +13833,6 @@
       {
         "url": " https://docs.fivem.net/docs/server-manual/setting-up-a-server/",
         "access_date": " 2013-09-17"
-      },
-      {
-        "url": " https://docs.fivem.net/docs/server-manual/setting-up-a-server/",
-        "access_date": " 2013-09-17"
       }
     ]
   },
@@ -14303,14 +13862,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://pen-testing.sans.org/resources/papers/gcih/tracking-orifice-trojan-university-network-101743 ",
-        "access_date": "April 20, 2018 "
-      },
-      {
-        "url": "https://books.google.com/books?id=nHPzTZ27a5UC&pg=PA6 ",
-        "access_date": "April 20, 2018"
-      },
       {
         "url": "https://pen-testing.sans.org/resources/papers/gcih/tracking-orifice-trojan-university-network-101743 ",
         "access_date": "April 20, 2018 "
@@ -14372,14 +13923,6 @@
       {
         "url": "http://forum.immunet.com/index.php?/topic/1849-manually-configure-ports-in-your-firewall/ ",
         "access_date": "2016-10-18 "
-      },
-      {
-        "url": "http://support.immunet.com/tiki-read_article.php?articleId=4 ",
-        "access_date": "2016-10-18"
-      },
-      {
-        "url": "http://forum.immunet.com/index.php?/topic/1849-manually-configure-ports-in-your-firewall/ ",
-        "access_date": "2016-10-18 "
       }
     ]
   },
@@ -14430,10 +13973,6 @@
       {
         "url": "http://help.logmein.com/articles/en_US/FAQ/Which-ports-and-protocols-does-LogMeIn-Hamachi2-use-en1 ",
         "access_date": "2016-10-18 "
-      },
-      {
-        "url": "http://help.logmein.com/articles/en_US/FAQ/Which-ports-and-protocols-does-LogMeIn-Hamachi2-use-en1 ",
-        "access_date": "2016-10-18 "
       }
     ]
   },
@@ -14475,10 +14014,6 @@
       {
         "url": "https://wiki.factorio.com/Multiplayer ",
         "access_date": "2019-01-23"
-      },
-      {
-        "url": "https://wiki.factorio.com/Multiplayer ",
-        "access_date": "2019-01-23"
       }
     ]
   },
@@ -14517,14 +14052,6 @@
     "sctp": "yes",
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=ng-control",
-        "access_date": "2024-04-21"
-      },
-      {
-        "url": "https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3223",
-        "access_date": "2024-04-21"
-      },
       {
         "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=ng-control",
         "access_date": "2024-04-21"
@@ -14752,9 +14279,6 @@
     "citation_urls": [
       {
         "url": "https://solarcontrols.cz/en/sconnect.html "
-      },
-      {
-        "url": "https://solarcontrols.cz/en/sconnect.html "
       }
     ]
   },
@@ -14874,10 +14398,6 @@
     "sctp": null,
     "dccp": null,
     "citation_urls": [
-      {
-        "url": "https://github.com/mumble-voip/mumble/blob/73a0b2f88812e99ac50a78b22dad53336177e78e/scripts/murmur.ini#L123 ",
-        "access_date": "29 October 2018"
-      },
       {
         "url": "https://github.com/mumble-voip/mumble/blob/73a0b2f88812e99ac50a78b22dad53336177e78e/scripts/murmur.ini#L123 ",
         "access_date": "29 October 2018"

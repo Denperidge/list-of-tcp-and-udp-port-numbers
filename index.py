@@ -208,14 +208,20 @@ if __name__ == "__main__":
         assert len(section.tables) == 1  
         table = section.tables[0]
 
+       
+
         rows = table.data()  # list[list[str]]: [[cell, cell, cell], [cell, cell, cell, cell]]
         del rows[0]  # Header row
 
         for cols in rows:
             # Filter out non-existant cells, usually at the end
             cols = list(filter(lambda cell: cell != None, cols))
-
+            
             entry = Entry()
+
+            for col in cols:
+                if col:
+                    entry.add_citation(col)  # Get any refs from columns field
 
             entry.ports = cols[0]
             del cols[0]  # Remove ports from cells to allow cleaner iteration
@@ -233,7 +239,6 @@ if __name__ == "__main__":
                     i += 1
                     continue
 
-                entry.add_citation(col)  # Get any refs from protocol field
 
                 # Colspan wasn't fetchable using wikitextparser: use regex
                 protocol = match(REGEX_PROTOCOL, col, IGNORECASE)
@@ -259,7 +264,6 @@ if __name__ == "__main__":
             # By now, we need to have hit description. It should be the last column
             assert i == len(cols) - 1 and cols[i]  
             entry.description = cols[i]
-            entry.add_citation(entry.description)
 
             debug(entry)
 
