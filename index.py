@@ -3,7 +3,7 @@ from multiprocessing import Value
 from urllib.request import urlopen, Request
 from wikitextparser import Template, parse
 from json import JSONEncoder, loads, dumps
-from typing import Any, Literal, NotRequired, TypedDict, get_args, override
+from typing import Any, Callable, Literal, NotRequired, TypedDict, get_args, override
 from re import IGNORECASE, findall, sub, match, escape
 from pathlib import Path
 
@@ -134,10 +134,12 @@ class Entry():
             })
 
         # From {{ Cite }}
-        if templates and len(templates) == 2:
+        if templates:  # and len(templates) == 2
             for template in templates:
                 # Only consider cite templates. Remember that templates aren't case sensitive, but python is
                 if template.name.lower().startswith("cite "):
+                    debug(f"Parsing cite {template}")
+
                     # Get access date if its there
                     access_date = get_from_template(template, "access-date")
 
@@ -145,30 +147,32 @@ class Entry():
                     # Get template names of this template usage
                     template_names = list(filter(lambda x: x is not "", template.name.split(" ")))
                     if len(template_names) == 2:  # For example: {{cite ietf}}
-                        form = template_names[1]  # For example: ietf
+                        form = template_names[1].lower().strip()  # For example: ietf
                     elif len(template_names) > 2:
                         raise ValueError("Too many template names")
                     
-                    if form == "IETF":  # Has two versions: rfc & draft
+                    if form == "ietf":  # Has two versions: rfc & draft
                         rfc = get_from_template(template, "rfc")
                         draft = get_from_template(template, "draft")
+                        ien = get_from_template(template, "ien")
 
                         if rfc:
                             url = f"https://www.rfc-editor.org/info/rfc{rfc}"
                         elif draft:
                             url = f"https://datatracker.ietf.org/doc/html/opsawg-tacacs-10"
+                        elif ien:
+                            url = f"https://history.rfc-editor.org/ien/ien{ien}.txt"
                         else:
-                            raise ValueError("no url found for ietf")
-
-                    elif form == "conference":
-                        url = "N/A (conference)"
+                            raise ValueError(f"no url found for ietf for port {self.ports}")
+                    elif form in ["conference", "book"]:
+                        url = f"N/A ({form})"
                     else:
                         url = get_from_template(template, "url")
 
                     # No matter what format, url must be defined and a string
-                    assert type(url) == str  
+                    assert_and_log("url type", type(url), str)
 
-                    citation: Citation = {"url": url}
+                    citation: Citation = {"url": url.strip()}
                     if access_date:
                         citation["access_date"] = access_date
                     self.citation_urls.append(citation)
@@ -212,16 +216,26 @@ class SanityTest(TypedDict):
     sctp: NotRequired[ProtocolValue]
     dccp: NotRequired[ProtocolValue]
     index: NotRequired[int]
+    citation_urls: NotRequired[list[str]]
 
-def assert_and_log(key: str, output_value: Any, expected_value: Any):
+def default_test(val1: Any, val2: Any) -> bool:
+    return bool(val1 == val2)
+
+def assert_and_log(key: str, output_value: Any, expected_value: Any, test_func: Callable[[Any, Any], bool]=default_test):
     debug(f"Entry {key} {output_value} == expected {expected_value}?")
-    assert output_value == expected_value
+    assert test_func(output_value, expected_value)
     debug("Success!")
- 
 
 
 if __name__ == "__main__":
     tests: list[SanityTest] = [
+        {
+            "search_key": "In programming APIs (not in communication between hosts), requests a system-allocated (dynamic) port",
+            "ports": "0",
+            "citation_urls": ["http://lxr.free-electrons.com/source/net/ipv4/inet_connection_sock.c?v=3.18#L89"],
+            "tcp": "n/a|reserved",
+            "udp": "n/a|reserved"
+        },
         {
             "search_key": "id softwares quakeworld",
             "index": 0,
@@ -291,12 +305,12 @@ if __name__ == "__main__":
             cols = list(filter(lambda cell: cell != None, cols))
             
             entry = Entry()
+            entry.ports = cols[0]
 
             for col in cols:
                 if col:
                     entry.add_citation(col)  # Get any refs from columns field
 
-            entry.ports = cols[0]
             del cols[0]  # Remove ports from cells to allow cleaner iteration
 
             info(f"Handling data for ports: {entry.ports}")
@@ -346,7 +360,6 @@ if __name__ == "__main__":
         debug(f"Test: {test}")
 
         found_entry = find_entries(out, test["search_key"])[test.get("index", 0)]
-
         assert_and_log(
             "ports",
             output_value=found_entry.ports,
@@ -358,6 +371,13 @@ if __name__ == "__main__":
                 output_value=found_entry.get_protocol(protocol),
                 expected_value= test.get(protocol, None)  # None is default value, aka unset
             )
+
+        test_citation_urls = test.get("citation_urls", [])
+        if len(test_citation_urls) >= 1:
+            found_entry_urls = list(map(lambda citation: citation["url"], found_entry.citation_urls))
+            for test_url in test_citation_urls:
+                assert_and_log("citation url", test_url, found_entry_urls, lambda val1, val2: val1 in val2)
+                
            
     _ = Path("list.json").write_text(dumps(out, cls=EntryEncoder, indent=2), encoding="utf-8")
 
