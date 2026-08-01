@@ -176,10 +176,10 @@ if __name__ == "__main__":
     else:
         user_agent = user_agent_path.read_text(encoding="utf-8") 
 
-    print("[INFO] Using User-Agent: " + user_agent)
+    info("Using User-Agent: " + user_agent)
 
 
-    print("[INFO] Using following protocol regex: " + REGEX_PROTOCOL)
+    debug("Using following protocol regex: " + REGEX_PROTOCOL)
 
 
     # Step 2: Get latest page version from Wikipedia & cleanup for better parsing
