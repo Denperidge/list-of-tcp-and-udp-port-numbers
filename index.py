@@ -136,7 +136,9 @@ class Entry():
         if templates:  # and len(templates) == 2
             for template in templates:
                 # Only consider cite templates. Remember that templates aren't case sensitive, but python is
-                if template.name.lower().startswith("cite "):
+                template_name = template.name.lower()
+
+                if template_name.startswith("cite ") or template_name.startswith("citation "):
                     debug(f"Parsing cite {template}")
 
                     # Get access date if its there
@@ -144,13 +146,16 @@ class Entry():
 
                     form = ""  # Format for the url, if a specific cite is used
                     # Get template names of this template usage
-                    template_names = list(filter(lambda x: x is not "", template.name.split(" ")))
+                    template_names = list(filter(lambda x: x != "" and x != "span", template.name.split(" ")))
                     if len(template_names) == 2:  # For example: {{cite ietf}}
                         form = template_names[1].lower().strip()  # For example: ietf
                     elif len(template_names) > 2:
                         raise ValueError("Too many template names")
-                    
-                    if form == "ietf":  # Has two versions: rfc & draft
+
+                    if form == "needed":
+                        warn(f"{self.ports} needs citation")
+                        continue
+                    elif form == "ietf":  # Has two versions: rfc & draft
                         rfc = get_from_template(template, "rfc")
                         draft = get_from_template(template, "draft")
                         ien = get_from_template(template, "ien")

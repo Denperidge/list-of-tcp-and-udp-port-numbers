@@ -2938,7 +2938,11 @@
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=13"
+      }
+    ]
   },
   {
     "ports": "688",
@@ -4009,7 +4013,12 @@
     "udp": null,
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "https://github.com/razerofficial/HTML5ChromaSDK",
+        "access_date": "2024-01-10 "
+      }
+    ]
   },
   {
     "ports": "[[Leet|1337]]",
@@ -5121,30 +5130,42 @@
   },
   {
     "ports": "2102",
-    "description": "[[Zephyr (protocol)|Zephyr Notification Service]] server",
+    "description": "[[Zephyr (protocol)|Zephyr Notification Service]] server<ref name=\"IANA\" />",
     "tcp": "yes",
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      }
+    ]
   },
   {
     "ports": "2103",
-    "description": "Zephyr Notification Service <code>serv-hm</code> connection",
+    "description": "Zephyr Notification Service <code>serv-hm</code> connection<ref name=\"IANA\" />",
     "tcp": "yes",
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      }
+    ]
   },
   {
     "ports": "2104",
-    "description": "Zephyr Notification Service hostmanager",
+    "description": "Zephyr Notification Service hostmanager<ref name=\"IANA\" />",
     "tcp": "yes",
     "udp": "yes",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "Inline reference: name=\"IANA\" "
+      }
+    ]
   },
   {
     "ports": "2123",
@@ -13746,7 +13767,12 @@
     "udp": "unofficial",
     "sctp": null,
     "dccp": null,
-    "citation_urls": []
+    "citation_urls": [
+      {
+        "url": "https://github.com/StunlockStudios/vrising-dedicated-server-instructions",
+        "access_date": "2024-07-13 "
+      }
+    ]
   },
   {
     "ports": "9877",
