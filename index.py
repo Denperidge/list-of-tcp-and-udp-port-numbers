@@ -129,7 +129,7 @@ class Entry():
         inline_ref = findall(REGEX_INLINE_REF, colValue)
         for ref in inline_ref:
             self.citation_urls.append({
-                "url": f"Inline reference: {ref}"
+                "url": f"Inline reference: {ref.strip()}"
             })
 
         # From {{ Cite }}
@@ -226,7 +226,7 @@ def default_test(val1: Any, val2: Any) -> bool:
     return bool(val1 == val2)
 
 def assert_and_log(key: str, output_value: Any, expected_value: Any, test_func: Callable[[Any, Any], bool]=default_test):
-    debug(f"Entry {key} {output_value} == expected {expected_value}?")
+    debug(f"Entry {key} '{output_value}' == expected {expected_value}?")
     assert test_func(output_value, expected_value)
     debug("Success!")
 
@@ -257,6 +257,17 @@ if __name__ == "__main__":
             "ports": "34197",
             "tcp": "no",
             "udp": "unofficial"
+        },
+        {
+            "search_key": "Border Gateway Protocol",
+            "ports": "179",
+            "tcp": "yes",
+            "udp": "maybe|assigned",
+            "sctp": "yes",
+            "citation_urls": [
+                "Inline reference: name=\"rfc4960\"",
+                "https://www.rfc-editor.org/info/rfc4271"
+            ]
         }
     ]
     # Step 1: determine user agent, as by wikipedia policy
@@ -362,6 +373,10 @@ if __name__ == "__main__":
             
             if not entry.is_cited():
                 warn(f"{entry.ports} isn't cited")
+
+            if entry.ports == "179":
+                # exit()
+                pass
                 
 
     for test in tests:
